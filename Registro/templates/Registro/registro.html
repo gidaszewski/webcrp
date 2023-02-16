@@ -1,0 +1,54 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+<header class="signup-section">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h2 class="text-light mx-auto mt-4 mb-4"
+                >INSCRIPCIÓNES ABIERTAS</h2>
+                <h1 class="text-uppercase mx-auto mt-4 mb-5"
+                >CHANÁ CHALLENGE</h1>
+                <p class="text-white-50 mx-auto mt-2 mb-2"
+                >Para registrarte, por favor introduce tu dirección de email</p>
+
+                {% if primerFormulario.errors %}
+
+                <p class="text-warning">
+                    Por favor, ingresa un email válido
+                </p>
+
+                {% endif %}
+
+                <form class="form-signup" action="" method="POST"> {% csrf_token %}  
+
+                    <div class="row input-group-newsletter">
+                        <div class="col">
+                            <input
+                                class="form-control"
+                                type="email"
+                                name="email"
+                                placeholder="Tu dirección de email..."
+                                aria-label="Tu dirección de email..."
+                                data-sb-validations="required,email"
+                            />
+                        </div>
+                        <div class="col-auto">
+                            <button
+                                class="btn btn-primary"
+                                type="submit">Registrarme
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock %}
