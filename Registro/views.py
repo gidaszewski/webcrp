@@ -1,27 +1,12 @@
 from django.shortcuts import render
 from Registro.forms import *
 from Registro.models import *
+from django.views.generic import *
+
 
 # Create your views here.
-def formRegistro(request):
-
-    if request.method == 'POST':
-
-        primerFormulario = FormRegistro(request.POST)
-
-        print(primerFormulario)
-
-        if primerFormulario.is_valid:
-
-            informacion = primerFormulario.cleaned_data
-
-            email = Usuario(email=informacion['email'])
-
-            email.save()
-
-            return render(request, 'Registro/datos.html')
-    else:
-
-        primerFormulario = FormRegistro()
-
-    return render(request, 'Registro/registro.html', {'primerFormulario': primerFormulario})
+class Usuario_Inscripsion(CreateView):
+    model = Usuario
+    success_url = 'registro/'
+    fields = ['nombre', 'apellido', 'email', 'genero', 'fecha_de_nacimiento', 'pais', 'estado', 'dni', 'telefono', 'grupo_de_running', 'talle_de_remera', 'categoria']
+    template_name = 'Registro/registro.html'
