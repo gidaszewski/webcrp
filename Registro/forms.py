@@ -19,5 +19,11 @@ class FormRegistro(forms.Form):
     categoria  = forms.CharField()
     email=forms.EmailField()
     class Meta:
-        widgets= {'fecha_de_nacimiento': DateInput()}
+        model = Usuario
+        fields = '__all__'
+        widgets = {
+            'fecha_de_nacimiento': forms.DateInput(
+                attrs={'type': 'date', 'placeholder': 'yyyy-mm-dd (DOB)', 'class': 'form-control'}
+            )
+        }
     

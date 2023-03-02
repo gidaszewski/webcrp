@@ -13,7 +13,16 @@ form {
 *, ::after, ::before {
   box-sizing: border-box;
 }
+.form-input {
+  width: 12.7rem;
+}
 
+.foto-remera {
+  border-radius: 0.2rem;
+  margin-top: 5rem;
+  width: 30rem;
+  height: auto;
+}
   .form-control {
     background-color: #fff;
     border: 1px solid #ddd;
