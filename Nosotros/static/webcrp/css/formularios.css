@@ -81,11 +81,11 @@ input{
   }
   .icon span svg{
     background-color: #0d371067;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     padding: 0.25rem 0.4rem;
     border-radius: 100%;
-    box-shadow: 0 0 10px rgba(199, 185, 185, 0.808);
+    box-shadow: 0 0 10px  #67c29c;
   }
   .icon span svg:hover{
     cursor: pointer;

@@ -11,8 +11,8 @@
 <section class="signup-section">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center" style="padding-top: 63rem;">
-            <div class="text-center">
-                <h2 class="text-light mx-auto mt-4 mb-4"
+            <div class="text-center" style="margin-top: 10rem;">
+                <h2 class="text-white-50 mx-auto mt-4 mb-4"
                 >INSCRIPCIÓNES ABIERTAS</h2>
 
                 {% if primerFormulario.errors %}
@@ -22,7 +22,8 @@
                 </p>
 
                 {% endif %}
-                <center><h1 class="text-black">Inscripcion</h1></center>
+                <h1 class="mx-auto my-0 text-uppercase"
+                    >CHANÁ CHALLENGE</h1>
                 
                 <form method="post"> 
                     {% csrf_token %}
@@ -73,24 +74,25 @@
                                 {{ form.grupo_de_running }}
                             </div>
                             <div class="mt-3">
-                                <label>{{ form.talle_de_remera.label }}</label><br>                            
-                                {{ form.talle_de_remera }}
-                            </div>
-                            <div class="mt-3">
                                 <label>{{ form.categoria.label }}</label><br>                            
                                 {{ form.categoria }}
                             </div>
+                            <div class="mt-3">
+                                <label>{{ form.talle_de_remera.label }}</label><br>                            
+                                {{ form.talle_de_remera }}
+                            </div> <br>
+                            <label>Medidad de los talles</label>
+                            <img class="foto-remera" src="{% static 'webcrp/images/foto_remera.jpg' %}" alt="foto_remera">
                             <div class="d-flex gap-2 justify-content-center mt-3 mb-3">
                                 <input type="submit" class="btn btn-primary" value="Crear">
                             </div> 
                         </div>
                     </div>
                 </form>
-                <img class="foto-remera" src="{% static 'webcrp/images/foto_remera.jpg' %}" alt="foto_remera">
             </div>
         </div>
     </div>
-    <section class="contact-section bg-black" style="height: 150vh;">
+    <section class="contact-section bg-black" style="height: 250vh;">
         <div class="container px-4 px-lg-5">
             <div class="social d-flex justify-content-center">
             </div>
