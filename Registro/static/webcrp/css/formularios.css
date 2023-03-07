@@ -79,6 +79,9 @@ input{
     padding-top: 30rem;
     color: white;
   }
+  .icon-check {
+    color: white;
+  }
   .icon span svg{
     background-color: #0d371067;
     width: 3rem;
@@ -86,6 +89,22 @@ input{
     padding: 0.25rem 0.4rem;
     border-radius: 100%;
     box-shadow: 0 0 10px rgba(199, 185, 185, 0.808);
+  }
+  div span svg{
+    background-color: #60f07f67;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.25rem 0.4rem;
+    border-radius: 100%;
+    animation: rotar 0.2s linear 1;
+  }
+  @keyframes rotar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   .icon span svg:hover{
     cursor: pointer;

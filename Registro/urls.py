@@ -4,4 +4,5 @@ from Registro.views import *
 
 urlpatterns = [
     path('registro/', Usuario_Inscripsion.as_view(), name="registro"),
+    path('completado/', Completado, name="completado"),
 ]
