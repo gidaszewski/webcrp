@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Home',
     'Registro',
     'InformacionEvento',
+    'Pago',
 ]
 
 MIDDLEWARE = [
