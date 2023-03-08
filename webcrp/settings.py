@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Home',
     'Registro',
-    'Nosotros'
+    'Nosotros',
+    'Datos'
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'juancgonzalez0901@gmail.com' # Aquí debes especificar la cuenta de correo que se usará para enviar los correos
+EMAIL_HOST_PASSWORD = 'hrukytteklmfqpaq' # Aquí debes especificar la contraseña de la cuenta de correo que se usará para enviar los correos

@@ -1,0 +1,28 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'webcrp/css/formulario.css' %}">
+    <link rel="stylesheet" href="{% static 'webcrp/css/botones.css' %}">
+</head>
+<header class="masthead">
+    <div style="width: 80%; height: auto; padding-top: 8rem; padding-left: 25%;">
+            <div class="contact-form">
+                <span class="heading">Modificar Datos</span>
+                <form method="POST" action="{% url 'enviar_correo' %}">
+                    {% csrf_token %}
+                  <label for="remitente">Email:</label>
+                  <input type="email" required="required" id="remitente" name="remitente">
+                  <label for="asunto">Asunto:</label>
+                  <input type="text" required="required" yyyid="asunto" name="asunto">
+                  <label for="mensaje">Datos a Modificar/Consultas:</label>
+                  <textarea required="required" id="mensaje" name="mensaje"></textarea>
+                  <input type="submit" value="Enviar" class="btn-primary">
+                </form>
+            </div>
+    </div>
+</header>
+{% endblock%}

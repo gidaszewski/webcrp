@@ -1,0 +1,74 @@
+button {
+    width: 190px;
+    height: 56px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    background: #119e26b9;
+    position: relative;
+    padding-bottom: 2em;
+  }
+  
+  button > div,button > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+  }
+  
+  button:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  button .clone > *,button .text > * {
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    margin-left: 4px;
+  }
+  
+  button .clone > * {
+    transform: translateY(60px);
+  }
+  
+  button:hover .clone > * {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+  button:hover .text > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+ button:hover {
+    background-color: #119e26b9;
+ }
+
+  /* icon style and hover */
+  button svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) ;
+    transition: 0.2s ease-out;
+  }
+  
+ 
