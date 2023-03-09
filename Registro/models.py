@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 tipos_categorias = [
-    (0, 'Seleccione una categoria'),
+    ("", 'Seleccione una categoria'),
     (1, 'Edad: 15-20 años'),
     (2, 'Edad: 20-25 años'),
     (3, 'Edad: 25-30 años'),
@@ -16,7 +16,7 @@ tipos_categorias = [
     (11, 'Edad: +70 años')
 ]
 tipos_remeras = [
-    (0, 'Seleccione un talle de remera'),
+    ("", 'Seleccione un talle de remera'),
     (1, 'XS'),
     (2, 'S'),
     (3, 'M'),
@@ -24,7 +24,7 @@ tipos_remeras = [
     (5, 'XL')
 ]
 tipos_generos = [
-    (0, 'Seleccione su genero'),
+    ("", 'Seleccione su genero'),
     (1, 'Masculino'),
     (2, 'Femenino'),
     (3, 'Otros')
@@ -33,7 +33,7 @@ class Usuario(models.Model):
     nombre = models.CharField(max_length=40, null=True)
     apellido = models.CharField(max_length=40, null=True)
     genero = models.CharField(max_length=40, null=True,
-            choices=tipos_generos, default=0)
+            choices=tipos_generos, default="")
     fecha_de_nacimiento = models.DateField(null=True)
     pais = models.CharField(max_length=40, null=True)
     estado = models.CharField(max_length=40, null=True)
@@ -41,7 +41,7 @@ class Usuario(models.Model):
     telefono = models.IntegerField(null=True)
     grupo_de_running = models.CharField(max_length=40, null=True)
     talle_de_remera = models.CharField(max_length=40, null=True,
-            choices=tipos_remeras, default=0)
+            choices=tipos_remeras, default="")
     categoria  = models.CharField(max_length=40, null=True,
-            choices=tipos_categorias, default=0)
+            choices=tipos_categorias, default="")
     email=models.EmailField()

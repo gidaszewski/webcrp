@@ -18,15 +18,15 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=254)),
                 ('nombre', models.CharField(max_length=40, null=True)),
                 ('apellido', models.CharField(max_length=40, null=True)),
-                ('genero', models.CharField(max_length=40, null=True)),
+                ('genero', models.CharField(max_length=40, null=True, blank=False)),
                 ('fecha_de_nacimiento', models.DateField(null=True)),
                 ('pais', models.CharField(max_length=40, null=True)),
                 ('estado', models.CharField(max_length=40, null=True)),
                 ('dni', models.IntegerField(null=True)),
                 ('telefono', models.IntegerField(null=True)),
                 ('grupo_de_running', models.CharField(max_length=40, null=True)),
-                ('talle_de_remera', models.CharField(max_length=40, null=True)),
-                ('categoria', models.CharField(max_length=40, null=True))
+                ('talle_de_remera', models.CharField(max_length=40, null=True, blank=False)),
+                ('categoria', models.CharField(max_length=40, null=True, blank=False))
             ],
         ),
     ]

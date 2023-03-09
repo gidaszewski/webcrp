@@ -6,18 +6,18 @@ class DateInput(forms.DateInput):
     input_type = 'date'
 
 class FormRegistro(forms.Form):
-    nombre = forms.CharField()
-    apellido = forms.CharField()
-    genero = forms.CharField()
-    fecha_de_nacimiento = forms.DateField()
-    pais = forms.CharField()
-    estado = forms.CharField()
-    dni = forms.IntegerField()
-    telefono = forms.IntegerField()
-    grupo_de_running = forms.CharField()
-    talle_de_remera = forms.CharField()
-    categoria  = forms.CharField()
-    email=forms.EmailField()
+    nombre = forms.CharField(required=True)
+    apellido = forms.CharField(required=True)
+    genero = forms.CharField(required=True)
+    fecha_de_nacimiento = forms.DateField(required=True)
+    pais = forms.CharField(required=True)
+    estado = forms.CharField(required=True)
+    dni = forms.IntegerField(required=True)
+    telefono = forms.IntegerField(required=True)
+    grupo_de_running = forms.CharField(required=True)
+    talle_de_remera = forms.CharField(required=True)
+    categoria  = forms.CharField(required=True)
+    email=forms.EmailField(required=True)
     class Meta:
         model = Usuario
         fields = '__all__'

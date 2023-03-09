@@ -24,7 +24,7 @@
                 <h1 class="mx-auto my-0 text-uppercase"
                     >CHANÁ CHALLENGE</h1>
                 
-                <form method="post" action="{% url 'completado' %}"> 
+                <form method="post" action="{% url 'completado' %}" enctype="multipart/form-data"> 
                     {% csrf_token %}
                     <div class="d-flex justify-content-center">
                         <div class="pe-5 ps-5 rounded text-secondary shadow" style="width: 30rem; background: linear-gradient(to bottom, #43434338, black);">
@@ -81,7 +81,7 @@
                                 {{ form.talle_de_remera }}
                             </div> <br>
                             <label>Medidad de los talles</label>
-                            <img class="foto-remera" src="{% static 'webcrp/images/foto_remera.jpg' %}" alt="foto_remera">
+                            <img class="foto-remera" src="{% static 'webcrp/images/foto_remera.png' %}" alt="foto_remera">
                             <div class="d-flex gap-2 justify-content-center mt-3 mb-3">
                                 <input type="submit" class="btn btn-primary" value="Inscribirme">
                             </div> 
@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-    <section class="contact-section bg-black" style="height: 250vh;">
+    <section class="contact-section bg-black" style="height: 150vh;">
         <div class="container px-4 px-lg-5">
             <div class="social d-flex justify-content-center">
             </div>
@@ -101,6 +101,33 @@
     <footer class="footer bg-black small text-center text-white-50">
         <div class="container divpx-4 px-lg-5"></div>
     </footer>
+    <section style="margin-top: 0;" class="contact-section bg-black">
+        <div class="container px-4 px-lg-5">
+            <p class="text-center text-light mx-auto mt-4 mb-5"
+            >SEGUÍNOS EN NUESTRAS REDES</p>
+            <div class="social d-flex justify-content-center">
+                <a 
+                    class="mx-2"
+                    href="https://www.instagram.com/costarioparana_/">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a 
+                    class="mx-2"
+                    href="https://www.facebook.com/costarioparana">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5"
+            >Copyright &copy; Costa Río Paraná 2023
+        </div>
+    </footer>
 </section>
+
 
 {% endblock %}

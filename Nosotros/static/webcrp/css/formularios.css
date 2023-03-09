@@ -143,11 +143,11 @@ input{
   
   .btn-primary {
     color: #000000;
-    background-color: #09AB21;
+    background-color: #67c29c;
     border-color: #ffffff;
   }
   .btn-primary:hover {
-    color: #09AB21;
+    color: #67c29c;
     background-color: #060606;
     border-color: #50817e;
   }
@@ -167,7 +167,7 @@ input{
   }
   .btn-primary:disabled, .btn-primary.disabled {
     color: #000000;
-    background-color: #09AB21;
+    background-color: #67c29c;
     border-color: #ffffff;
   }
   button {
