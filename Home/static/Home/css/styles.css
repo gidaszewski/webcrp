@@ -659,14 +659,20 @@ progress {
 .container-pay {
   position: absolute;
   top: 10%;
+  bottom: auto;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
 
+@media (min-width: 390px) {
+  .container-pay {
+    max-width: 350px;
+  }
+}
 @media (min-width: 576px) {
   .container-pay {
     max-width: 540px;
