@@ -18,12 +18,3 @@ class FormRegistro(forms.Form):
     talle_de_remera = forms.CharField(required=True)
     categoria  = forms.CharField(required=True)
     email=forms.EmailField(required=True)
-    class Meta:
-        model = Usuario
-        fields = '__all__'
-        widgets = {
-            'fecha_de_nacimiento': forms.DateInput(
-                attrs={'type': 'date', 'placeholder': 'yyyy-mm-dd (DOB)', 'class': 'form-control'}
-            )
-        }
-    
