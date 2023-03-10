@@ -14,9 +14,9 @@
                 <span class="heading">Modificar Datos</span>
                 <form method="POST" action="{% url 'enviar_correo' %}">
                     {% csrf_token %}
-                  <label for="remitente">Email:</label>
-                  <input type="email" required="required" id="remitente" name="remitente">
-                  <label for="asunto">Asunto:</label>
+                  <label for="remitente">Nombre y Apellido:</label>
+                  <input type="text" required="required" id="remitente" name="remitente">
+                  <label for="asunto">Escribir tu mail para respuesta</label>
                   <input type="text" required="required" yyyid="asunto" name="asunto">
                   <label for="mensaje">Datos a Modificar/Consultas:</label>
                   <textarea required="required" id="mensaje" name="mensaje"></textarea>
