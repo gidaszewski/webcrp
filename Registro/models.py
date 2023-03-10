@@ -30,6 +30,7 @@ tipos_generos = [
     (3, 'Otros')
 ]
 class Usuario(models.Model):
+    id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=40, null=True)
     apellido = models.CharField(max_length=40, null=True)
     genero = models.CharField(max_length=40, null=True,

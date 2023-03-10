@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'webcrpDB',
-        'USER': 'JuanCruz',
+        'USER': 'francrp',
         'PASSWORD': 'pass',
         'HOST': 'localhost',
         'PORT': '3306',

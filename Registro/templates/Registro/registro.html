@@ -13,72 +13,64 @@
             <div class="text-center" style="margin-top: 10rem;">
                 <h2 class="text-white-50 mx-auto mt-4 mb-4"
                 >INSCRIPCIÓNES ABIERTAS</h2>
-
-                {% if primerFormulario.errors %}
-
-                <p class="text-warning">
-                    Por favor, ingresa un email válido
-                </p>
-
-                {% endif %}
                 <h1 class="mx-auto my-0 text-uppercase"
                     >CHANÁ CHALLENGE</h1>
                 
-                <form method="post" action="{% url 'completado' %}" enctype="multipart/form-data"> 
+                <form method="POST" action="" enctype="multipart/form-data"> 
                     {% csrf_token %}
                     <div class="d-flex justify-content-center">
                         <div class="pe-5 ps-5 rounded text-secondary shadow" style="width: 30rem; background: linear-gradient(to bottom, #43434338, black);">
                             <div class="row">
                             <div class="mt-3 form-input">
-                                <label>{{ form.nombre.label }}</label>                      
-                                {{ form.nombre }}
+                                <label>{{ primerFormulario.nombre.label }}</label>                      
+                                {{ primerFormulario.nombre }}
                             </div>
                             <div class="mt-3 form-input">
-                                <label>{{ form.apellido.label }}</label>                         
-                                {{ form.apellido }}
+                                <label>{{ primerFormulario.apellido.label }}</label>                         
+                                {{ primerFormulario.apellido }}
                             </div>
                         </div>
                             <div class="mt-3">
-                                <label>{{ form.email.label }}</label><br>                            
-                                {{ form.email }}
+                                <label>{{ primerFormulario.email.label }}</label><br>                            
+                                {{ primerFormulario.email }}
                             </div>
                             <div class="mt-3">
-                                <label>{{ form.genero.label }}</label><br>                            
-                                {{ form.genero }}
+                                <label>{{ primerFormulario.genero.label }}</label><br>                            
+                                {{ primerFormulario.genero }}
                             </div>
                             <div class="mt-3">
-                                <label>{{ form.fecha_de_nacimiento.label }}</label><br>                            
-                                {{ form.fecha_de_nacimiento }}
+                                <label>{{ primerFormulario.fecha_de_nacimiento.label }}</label><br>                            
+                                {{ primerFormulario.fecha_de_nacimiento }}
                             </div>
                             <div class="row">
                             <div class="mt-3 form-input">
-                                <label>{{ form.pais.label }}</label><br>                            
-                                {{ form.pais }}
+                                <label>{{ primerFormulario.pais.label }}</label><br>                            
+                                {{ primerFormulario.pais }}
                             </div>
                             <div class="mt-3 form-input">
-                                <label>{{ form.estado.label }}</label><br>                            
-                                {{ form.estado }}
+                                <label>{{ primerFormulario.estado.label }}</label><br>                            
+                                {{ primerFormulario.estado }}
                             </div>
                         </div>
                             <div class="mt-3">
-                                <label>{{ form.dni.label }}</label><br>                            
-                                {{ form.dni }}
+                                <label>{{ primerFormulario.dni.label }}</label><br>                            
+                                {{ primerFormulario.dni }}
                             </div>
                             <div class="mt-3">
-                                <label>{{ form.telefono.label }}</label><br>                            
-                                {{ form.telefono }}
+                                <label>{{ primerFormulario.telefono.label }}</label><br>                            
+                                {{ primerFormulario.telefono }}
                             </div>
                             <div class="mt-3">
-                                <label>{{ form.grupo_de_running.label }}</label><br>                            
-                                {{ form.grupo_de_running }}
+                                <label>{{ primerFormulario.grupo_de_running.label }}</label><br>                            
+                                {{ primerFormulario.grupo_de_running }}
                             </div>
                             <div class="mt-3">
-                                <label>{{ form.categoria.label }}</label><br>                            
-                                {{ form.categoria }}
+                                <label>{{ primerFormulario.categoria.label }}</label><br>                            
+                                {{ primerFormulario.categoria }}
                             </div>
                             <div class="mt-3">
-                                <label>{{ form.talle_de_remera.label }}</label><br>                            
-                                {{ form.talle_de_remera }}
+                                <label>{{ primerFormulario.talle_de_remera.label }}</label><br>                            
+                                {{ primerFormulario.talle_de_remera }}
                             </div> <br>
                             <label>Medidad de los talles</label>
                             <img class="foto-remera" src="{% static 'webcrp/images/foto_remera.png' %}" alt="foto_remera">
