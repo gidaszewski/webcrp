@@ -71,4 +71,16 @@ button {
     transition: 0.2s ease-out;
   }
   
- 
+  .icons {
+    padding-left: 48%;
+    padding-top: 30rem;
+    color: white;
+  }
+  .icon span svg{
+    background-color: #09ab21;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.25rem 0.4rem;
+    border-radius: 100%;
+    box-shadow: 0 0 10px  #67c29c;
+  }

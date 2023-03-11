@@ -7,7 +7,7 @@
   --bs-red: #a16468;
   --bs-orange: #fd7e14;
   --bs-yellow: #fdf83a;
-  --bs-green: #67c29c;
+  --bs-green: #09ab21;
   --bs-teal: #64a19d;
   --bs-cyan: #1cabc4;
   --bs-white: #fff;
@@ -22,9 +22,9 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #64a19d;
+  --bs-primary: #09ab21;
   --bs-secondary: #7464a1;
-  --bs-success: #67c29c;
+  --bs-success: #09ab21;
   --bs-info: #1cabc4;
   --bs-warning: #fdf83a;
   --bs-danger: #a16468;
@@ -32,7 +32,7 @@
   --bs-dark: #212529;
   --bs-black: #000;
   --bs-white: #fff;
-  --bs-primary-rgb: 100, 161, 157;
+  --bs-primary-rgb: 9, 171, 33;
   --bs-secondary-rgb: 116, 100, 161;
   --bs-success-rgb: 103, 194, 156;
   --bs-info-rgb: 28, 171, 196;
@@ -11606,7 +11606,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #09ab21;
   }
 }
 .projects-section .project-text {
