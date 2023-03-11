@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*xwj%4vpkj51%kf_g7s4_9aam)lh%u-dl3qvv57fzxzc$cjanl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['89.117.32.77', 'costarioparana.con.ar', 'www.costarioparana.com.ar']
 
 
 # Application definition
@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'webcrp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'costarioparanaDB',
+        'NAME': 'crpDB',
         'USER': 'fran',
-        'PASSWORD': 'rootfran2023',
+        'PASSWORD': 'Basededatoscrp23',
         'HOST': 'localhost',
         'PORT': '3306',
     }
