@@ -1,0 +1,35 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100 d-flex align-items-center justify-content-center">
+        <div class="container-pay px-lg-4 bg-white h-auto mt-3 mb-0">
+            <h1 class="mx-auto my-4 text-uppercase mb-4 text-center"
+            >CHANÁ CHALLENGE</h1>
+            <h3 class="text-black mt-4 mb-4 text-center"
+            >PAGAR INSCRIPCIÓN POR TRANSFERENCIA BANCARIA</h3>
+            <section class="container px-4 px-lg-5 h-10 d-flex align-items-center justify-content-center mt-4 mb-4">
+                <form class="form-signup" method="POST"> {% csrf_token %}
+                    <div class="row input-group-newsletter">
+                        <div class="col">
+                            Ingresá tu código
+                            <input type="text" required="required" name="codigo">
+                        </div>
+                        <div class="col-auto">
+                            <button
+                                style="background-color:rgb(255, 255, 255)"
+                                type="submit">Aplicar código
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <dt class="text-black text-center mb-5"
+            >Recordá que se realiza el pago del 50% de la inscripción y luego el otro 50% en efectivo en la entrega de Kits.</dt>
+        </div>
+    </div>
+</header>
+
+{% endblock %}

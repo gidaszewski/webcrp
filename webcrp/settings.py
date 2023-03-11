@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Home',
     'Registro',
+    'InformacionEvento',
+    'Pago',,
     'Nosotros',
     'Datos'
 ]
@@ -80,9 +82,9 @@ WSGI_APPLICATION = 'webcrp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'webcrpdb',
-        'USER': 'JuanCruz',
-        'PASSWORD': 'pass',
+        'NAME': 'crpDB',
+        'USER': 'usercrp',
+        'PASSWORD': 'crpweb2023',
         'HOST': 'localhost',
         'PORT': '3306',
     }

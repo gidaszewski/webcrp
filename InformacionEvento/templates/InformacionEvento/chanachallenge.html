@@ -1,0 +1,79 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+<header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'Home/assets/img/logo-evento.png' %}" alt="..." />
+        </div>
+    </div>
+</header>
+<a class="arrow-container">
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+</a>
+<section class="projects-section bg-black">
+    <div class="container px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-xl-6 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'Home/assets/img/imagen1.png' %}" alt="..." /></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-white text-left text-lg-left">
+                    <h4>Nuevo desafío</h4>
+                    <p class="text-white-50 mb-0">
+                    7 DE MAYO DE 2023 - DIAMANTE, E.R HORA 10:00AM - DISTANCIAS 21K, 10K Y 5K - LARGADA EN 'Complejo Turístico Valle de La Ensenada'.</p>
+                    <a class="btn btn-primary mt-4 mb-4" href="{% url 'registro' %}"
+                    >INSCRIBITE YA</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project One Row-->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/imagen2.png' %}" alt="..." /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-primary text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-black">¿Qué es Tierra Chaná?</h4>
+                            <p class="mb-0 text-dark">Tierra Chana es un tesoro natural en la ciudad de Diamante. Con más de 25 km de senderos, es el lugar perfecto para una aventura en la naturaleza. Explora sus bosques, arroyos y praderas, y disfruta de la tranquilidad y la belleza de esta reserva ecológica única.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Two Row-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/remeras.png' %}" alt="..." /></div>
+            <div class="col-lg-6">
+                <div class="bg-primary text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-black">Remera Oficial</h4>
+                            <p class="mb-0 text-dark">Correr en la naturaleza es una aventura emocionante y desafiante. Es por eso que diseñamos esta remera especialmente para ayudar a los atletas a alcanzar su máximo rendimiento. Está hecha de materiales de alta calidad que se adaptan a las necesidades de los corredores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Three Row-->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/imagen3.png' %}" alt="..." /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-primary text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-black">Trail en Tierra Chaná</h4>
+                            <p class="mb-0 text-dark">¡Atrévete a explorar lo salvaje y descubre la aventura del trail running en la naturaleza!</p>
+                            <a class="btn btn-secondary mt-4 mb-4" href="{% url 'registro' %}"
+                            >INSCRIBITE YA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
