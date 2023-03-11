@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'InformacionEvento',
     'Pago',
     'Nosotros',
-    'Datos'
+    'Datos',
 ]
 
 MIDDLEWARE = [
