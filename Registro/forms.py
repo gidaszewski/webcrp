@@ -9,15 +9,15 @@ class DateInput(forms.DateInput):
 class FormRegistro(forms.Form):
     nombre = forms.CharField(required=True) 
     apellido = forms.CharField(required=True)
-    genero = forms.ChoiceField(choices=tipos_generos, required=True)
+    genero = forms.ChoiceField(choices=tipos_generos, required=True, initial="")
     fecha_de_nacimiento = forms.DateField(required=True)
     pais = forms.CharField(required=True)
     estado = forms.CharField(required=True)
     dni = forms.IntegerField(required=True)
     telefono = forms.IntegerField(required=True)
     grupo_de_running = forms.CharField(required=True)
-    talle_de_remera = forms.ChoiceField(choices=tipos_remeras, required=True)
-    categoria  = forms.ChoiceField(choices=tipos_categorias, required=True)
+    talle_de_remera = forms.ChoiceField(choices=tipos_remeras, required=True, initial="")
+    categoria  = forms.ChoiceField(choices=tipos_categorias, required=True, initial="")
     email=forms.EmailField(required=True)
 
     def clean_email(self):

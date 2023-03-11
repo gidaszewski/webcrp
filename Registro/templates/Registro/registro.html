@@ -6,6 +6,10 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'webcrp/css/formularios.css' %}">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'fullcalendar/fullcalendar.min.css' %}">
+    <script src="{% static 'fullcalendar/lib/moment.min.js' %}"></script>
+    <script src="{% static 'fullcalendar/fullcalendar.min.js' %}"></script>
 </head>
 <section class="signup-section">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
@@ -13,6 +17,11 @@
             <div class="text-center" style="margin-top: 10rem;">
                 <h2 class="text-white-50 mx-auto mt-4 mb-4"
                 >INSCRIPCIÓNES ABIERTAS</h2>
+                {% if errors %}
+
+                <p style="color:red">Ingresa un email válido: {{errors}}</p>
+
+                {% endif %}
                 <h1 class="mx-auto my-0 text-uppercase"
                     >CHANÁ CHALLENGE</h1>
                 <form method="POST" action="" enctype="multipart/form-data"> 
@@ -29,7 +38,7 @@
                                 {{ primerFormulario.apellido }}
                             </div>
                         </div>
-                            <div class="mt-3">
+                            <div class="mt-3 input-error">
                                 <label>{{ primerFormulario.email.label }}</label><br>                            
                                 {{ primerFormulario.email }}
                             </div>
@@ -39,7 +48,7 @@
                             </div>
                             <div class="mt-3">
                                 <label>{{ primerFormulario.fecha_de_nacimiento.label }}</label><br>                            
-                                {{ primerFormulario.fecha_de_nacimiento }}
+                                <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento">
                             </div>
                             <div class="row">
                             <div class="mt-3 form-input">
@@ -71,7 +80,7 @@
                                 <label>{{ primerFormulario.talle_de_remera.label }}</label><br>                            
                                 {{ primerFormulario.talle_de_remera }}
                             </div> <br>
-                            <label>Medidad de los talles</label>
+                            <label>Medidas de los talles</label>
                             <img class="foto-remera" src="{% static 'webcrp/images/foto_remera.png' %}" alt="foto_remera">
                             <div class="d-flex gap-2 justify-content-center mt-3 mb-3">
                                 <input type="submit" class="btn btn-primary" value="Inscribirme">
