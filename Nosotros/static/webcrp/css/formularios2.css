@@ -1,3 +1,30 @@
+@media screen and (max-width:768px) {
+  .sb-img{
+    margin-top: 6rem;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+  .icons {
+    display: none;
+  }
+  .projects-section{
+    padding: 0 0;
+  }
+}
+@media screen and (min-width:769px) {
+  .sb-img{
+    max-width: 3050px;
+  }
+  .icons {
+    margin-top: 33rem;
+    padding-left: 48%;
+    color: white;
+  }
+  .icons:hover {
+    cursor: pointer;
+  }
+}
+
 form {
     width: 100%;
   }
@@ -74,9 +101,6 @@ input{
   }
   h1 {
     margin-bottom: 2rem;
-  }
-  .icons {
-    color: white;
   }
   .icon span svg{
     background-color: white;

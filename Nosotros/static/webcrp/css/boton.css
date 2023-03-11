@@ -70,16 +70,12 @@ button {
     transform: translateY(-50%) ;
     transition: 0.2s ease-out;
   }
-  .icons {
-    margin-top: 33rem;
-    padding-left: 48%;
-    color: white;
-  }
+  
   .icon span svg{
     background-color: #09ab21;
     width: 4rem;
     height: 4rem;
     padding: 0.25rem 0.4rem;
     border-radius: 100%;
-    box-shadow: 0 0 10px  #67c29c;
+    box-shadow: 0 0 10px  #09ab21;
   }

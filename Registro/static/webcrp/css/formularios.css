@@ -76,8 +76,11 @@ input{
   }
 
   .icon-check {
+    flex-direction: column; 
+    margin-top: 5rem;
     color: white;
   }
+  
 
   div span svg{
     background-color: #56f178cc;
@@ -237,6 +240,24 @@ input{
   .contact-section2{
     height: 1px;
   }
+  .btn-pdf{
+    background-color: brown; 
+    border-radius: 7px;
+    height: 2.5rem;
+    text-decoration: none;
+    font-size: large;
+    outline: none;
+    border: 2px solid black; 
+    margin-bottom: 8rem;
+    max-width: 15rem; 
+    margin-left: 15%;
+    color: white; 
+    margin-top: 1rem;
+  }
+  .btn-home{
+    max-width: 15rem; 
+    margin-left: 15%;
+  }
 }
 
 @media screen and (min-width:769px) {
@@ -248,6 +269,24 @@ input{
   }
   .registro-form-2{
     margin-top: 18rem;
+  }
+  .btn-pdf{
+    background-color: brown; 
+    border-radius: 7px;
+    height: 2.5rem;
+    text-decoration: none;
+    font-size: large;
+    outline: none;
+    border: 2px solid black; 
+    margin-bottom: 8rem;
+    max-width: 15rem; 
+    margin-left: 23%;
+    color: white; 
+    margin-top: 1rem;
+  }
+  .btn-home{
+    max-width: 15rem; 
+    margin-left: 23%;
   }
 }
  
