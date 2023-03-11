@@ -3,10 +3,6 @@
 {% load static %}
 
 {% block contenido %} 
-<head>
-    <link rel="stylesheet" href="{% static 'webcrp/css/formularios.css' %}">
-    <link rel="stylesheet" href="{% static 'webcrp/css/boton.css' %}">
-</head>
 <header class="masthead">
     <div class="icons" style="position: absolute;">
         <div class="icon" style="position: absolute;">
@@ -55,7 +51,7 @@
             <div class="col-lg-6">
                 <div class="bg-primary text-center h-100 project">
                     <div class="d-flex h-100">
-                        <div style="padding: 2rem;" class="project-text w-100 my-auto text-center text-lg-left">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-black">¿Por qué creamos Costa Rio Paraná?</h4>
                             <p class="mb-0 text-dark">Los fundadores de Costa Rio Parana comparten una misma pasión por el deporte y la naturaleza, lo que les llevó a formar este grupo de corredores comprometidos y unidos.
                             </p>
@@ -66,14 +62,14 @@
         </div>
         <!-- Project Three Row-->
         <div class="row gx-0 justify-content-center">
-            <div class="col-lg-6"><img class="img-fluid" src="{% static 'webcrp/images/foto5.jpg' %}" alt="..." /></div>
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/imagen3.png' %}" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
                 <div class="bg-primary text-center h-100 project">
-                    <div class="d-flex h-100">
-                        <div style="padding: 2rem;" class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-black">Nuestro Objetivo</h4>
-                            <p class="mb-0 text-dark">El enfoque de Costa Rio Parana es de corredores para corredores. Todos los miembros comparten su conocimiento y experiencia para ayudar a otros a mejorar su técnica y habilidades. También son muy abiertos a recibir comentarios positivos y críticas constructivas para mejorar su práctica y alcanzar sus objetivos juntos.</p>
-                            <a class="btn btn-secondary mt-4 mb-4" href="{% url 'registro' %}"
+                    <div class="d-flex h-100">  
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-black">Nuestro objetivo</h4> 
+                            <p class="mb-0 text-dark">El enfoque de Costa Rio Parana es de corredores para corredores. Todos los miembros comparten su conocimiento y experiencia para ayudar a otros a mejorar su técnica y habilidades.</p>
+                            <a class="btn btn-secondary mt-4 mb-2" href="{% url 'registro' %}"
                             >INSCRIBITE YA</a>
                         </div>
                     </div>
@@ -93,7 +89,7 @@
             behavior: 'smooth'
           });
         });
-      </script>
+    </script>
 </section>
 
 {% endblock %}
