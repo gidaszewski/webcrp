@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'admin_interface',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -43,7 +44,10 @@ INSTALLED_APPS = [
     'Pago',
     'Nosotros',
     'Datos',
+    'colorfield',
 ]
+
+X_FRAME_OPTIONS="SAMEORIGIN"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

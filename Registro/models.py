@@ -32,6 +32,14 @@ tipos_generos = [
         ("Otros", 'Otros')
         ]
 
+tipos_distancias = [
+        ("", 'Seleccione una distancia'),
+        ("1", '5K TREKKING'),
+        ("2", '5K COMPETITIVO'),
+        ("3", '10K COMPETITIVO'),
+        ("4", '21K COMPETITIVO'),
+        ]
+
 class Usuario(models.Model):
     nombre = models.CharField(max_length=40, null=True)
     apellido = models.CharField(max_length=40, null=True)
@@ -41,6 +49,8 @@ class Usuario(models.Model):
     pais = models.CharField(max_length=40, null=True)
     estado = models.CharField(max_length=40, null=True)
     dni = models.IntegerField(null=True)
+    distancia = models.CharField(max_length=40, null=True,
+            choices=tipos_distancias, default="")
     telefono = models.BigIntegerField(null=True)
     grupo_de_running = models.CharField(max_length=40, null=True)
     talle_de_remera = models.CharField(max_length=40, null=True,

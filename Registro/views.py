@@ -38,6 +38,7 @@ def Usuario_Inscripsion(request):
                 pais=informacion['pais'],
                 estado=informacion['estado'],
                 dni=informacion['dni'],
+                distancia=informacion['distancia'],
                 telefono=informacion['telefono'],
                 grupo_de_running=informacion['grupo_de_running'],
                 talle_de_remera=informacion['talle_de_remera'],
