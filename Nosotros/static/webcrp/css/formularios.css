@@ -47,6 +47,7 @@ form {
   *, ::after, ::before {
     box-sizing: border-box;
 }
+
 input{
     background-color: #fff;
     border: 1px solid #ddd;
@@ -75,13 +76,10 @@ input{
     margin-bottom: 2rem;
   }
   .icons {
-    margin-left: 50%;
-    padding-left: 50%;
-    padding-top: 30rem;
     color: white;
   }
   .icon span svg{
-    background-color: #09ab21;
+    background-color: white;
     width: 4rem;
     height: 4rem;
     padding: 0.25rem 0.4rem;

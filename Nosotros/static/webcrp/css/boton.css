@@ -70,10 +70,9 @@ button {
     transform: translateY(-50%) ;
     transition: 0.2s ease-out;
   }
-  
   .icons {
+    margin-top: 33rem;
     padding-left: 48%;
-    padding-top: 30rem;
     color: white;
   }
   .icon span svg{

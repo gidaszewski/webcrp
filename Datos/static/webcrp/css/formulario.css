@@ -11,7 +11,6 @@
 .contact-form .heading {
   font-size: 24px;
   color: black;
-  ;
   margin-bottom: 12px;
   font-weight: bold;
   display: block;
@@ -46,4 +45,20 @@ textarea {
   transition: transform 0.3s ease-in-out;
 }
 
+@media screen and (min-width:769px) {
+  .contenedor-form{
+    width: 80%; 
+    height: auto; 
+    padding-top: 8rem; 
+    padding-left: 25%;
+  }
+}
 
+@media screen and (max-width:768px) {
+  .contenedor-form{
+    width: 98%; 
+    height: auto; 
+    padding-top: 8rem; 
+    padding-left: 2%;
+  }
+}
