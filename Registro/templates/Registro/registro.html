@@ -13,17 +13,16 @@
 </head>
 <section class="signup-section">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="registro-form  d-flex justify-content-center">
-            <div class="registro-form-2 text-center">
-                <h2 class="text-white-50 mx-auto mt-4 mb-4"
+        <div class="registro-form  d-flex justify-content-center mb-5">
+            <div class="registro-form-2 text-center mb-5">
+                <img class="img-fluid-reg mt-0 mb-0" src="{% static 'Home/assets/img/logo-evento.png' %}" alt="..." />
+                <h2 class="text-white-50 mx-auto mt-0 mb-5"
                 >INSCRIPCIÓNES ABIERTAS</h2>
                 {% if errors %}
 
                 <p style="color:red">Ingresa un email válido: {{errors}}</p>
 
                 {% endif %}
-                <h1 class="mx-auto my-0 text-uppercase"
-                    >CHANÁ CHALLENGE</h1><br><br>
                 <form method="POST" action="" enctype="multipart/form-data"> 
                     {% csrf_token %}
                     <div class="d-flex justify-content-center">

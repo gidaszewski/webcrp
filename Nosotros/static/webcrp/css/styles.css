@@ -593,10 +593,6 @@ progress {
   max-width: 100%;
   height: auto;
 }
-.img-fluid-reg {
-  max-width: 70%;
-  height: auto;
-}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -11689,7 +11685,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(9, 171, 33, 1), rgba(9, 171, 33, 0.2));
+  background: linear-gradient(rgba(9, 171, 33, 1), rgba(9, 171, 33, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
