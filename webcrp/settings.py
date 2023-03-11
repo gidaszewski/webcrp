@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'Home',
     'Registro',
     'InformacionEvento',
-    'Pago',,
+    'Pago',
     'Nosotros',
-    'Datos'
+    'Datos',
 ]
 
 MIDDLEWARE = [
@@ -82,9 +82,9 @@ WSGI_APPLICATION = 'webcrp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'crpDB',
-        'USER': 'usercrp',
-        'PASSWORD': 'crpweb2023',
+        'NAME': 'costarioparanaDB',
+        'USER': 'fran',
+        'PASSWORD': 'rootfran2023',
         'HOST': 'localhost',
         'PORT': '3306',
     }
