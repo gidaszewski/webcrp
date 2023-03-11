@@ -13,8 +13,8 @@
 </head>
 <section class="signup-section">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center" style="padding-top: 63rem;">
-            <div class="text-center" style="margin-top: 10rem;">
+        <div class="registro-form  d-flex justify-content-center">
+            <div class="registro-form-2 text-center">
                 <h2 class="text-white-50 mx-auto mt-4 mb-4"
                 >INSCRIPCIÓNES ABIERTAS</h2>
                 {% if errors %}
@@ -23,7 +23,7 @@
 
                 {% endif %}
                 <h1 class="mx-auto my-0 text-uppercase"
-                    >CHANÁ CHALLENGE</h1>
+                    >CHANÁ CHALLENGE</h1><br><br>
                 <form method="POST" action="" enctype="multipart/form-data"> 
                     {% csrf_token %}
                     <div class="d-flex justify-content-center">
@@ -91,14 +91,14 @@
             </div>
         </div>
     </div>
-    <section class="contact-section bg-black" style="height: 150vh;">
+    <section class="contact-section2 bg-black">
         <div class="container px-4 px-lg-5">
             <div class="social d-flex justify-content-center">
             </div>
         </div>
     </section>
     <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50">
+    <footer class="footer footer2 bg-black small text-center text-white-50">
         <div class="container divpx-4 px-lg-5"></div>
     </footer>
     <section style="margin-top: 0;" class="contact-section bg-black">

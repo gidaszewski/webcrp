@@ -229,5 +229,61 @@ input{
     color: #fff;
   }
   
-  
-  
+@media screen and (max-width:768px) {
+  .singup-section {
+    max-width: 760px;
+  }
+  .registro-form{
+    padding-top: 0rem;
+  }
+  .registro-form div form input {
+    max-width: 21rem;
+  }
+  .registro-form div form select {
+    max-width: 21rem;
+  }
+  .registro-form div form img {
+    max-width: 21rem;
+  }
+  .form-input{
+    width: 22.6rem;
+    margin-left: 1.5rem;
+  }
+  .footer2 {
+    height: 1vh;
+  }
+  .contact-section2{
+    height: 1px;
+  }
+  nav .container button {
+    max-width: 5rem;
+  }
+  nav .container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+  nav .container div{
+    background-color: black;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .registro-form{
+    padding-top: 63rem;
+  }
+  .contact-section2{
+    height: 150vh;
+  }
+  .registro-form-2{
+    margin-top: 18rem;
+  }
+  nav div {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+ 

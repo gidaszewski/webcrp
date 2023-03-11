@@ -9,7 +9,7 @@
         </div>
     </div>
 </header>
-<a class="arrow-container">
+<a class="arrow-container" id="mi-svg">
     <div class="arrow"></div>
     <div class="arrow"></div>
     <div class="arrow"></div>
@@ -74,6 +74,19 @@
             </div>
         </div>
     </div>
+    <script>
+        // Obtener el elemento SVG
+        const miSvg = document.getElementById('mi-svg');
+      
+        // Agregar un evento de clic al elemento SVG
+        miSvg.addEventListener('click', () => {
+          // Desplazar la pantalla hacia abajo 200px
+          window.scrollTo({
+            top: window.pageYOffset + 720,
+            behavior: 'smooth'
+          });
+        });
+      </script>
 </section>
 
 {% endblock %}

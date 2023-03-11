@@ -45,6 +45,7 @@ def Usuario_Inscripsion(request):
                 email=informacion['email']
             )
             usuario.save()
+            return render(request, 'Registro/completado.html')
 
     primerFormulario = FormRegistro()
     return render(request, 'Registro/registro.html', {'primerFormulario': primerFormulario, 'errors': primerFormulario.errors})
