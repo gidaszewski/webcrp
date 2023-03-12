@@ -8,7 +8,7 @@ import re
 # Create your views here.
 
 def descargar_pdf(request):
-    file_path = 'C:/Users/juanc/Desktop/webcrp/Registro/static/webcrp/DESLINDE-CHANA-CHALENGE.pdf'
+    file_path = '/home/fran/webcrp/staticfiles/webcrp/DESLINDE-CHANA-CHALENGE.pdf'
     file = open(file_path, 'rb')
     response = FileResponse(file, as_attachment=True, filename='DESLINDE-CHANA-CHALENGE.pdf')
     return response
@@ -25,8 +25,6 @@ def Usuario_Inscripsion(request):
     if request.method == 'POST':
 
         primerFormulario = FormRegistro(request.POST)
-
-        print(primerFormulario)
 
         if primerFormulario.is_valid():
             informacion = primerFormulario.cleaned_data
