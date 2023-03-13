@@ -10,13 +10,16 @@
   .projects-section{
     padding: 0 0;
   }
+  .arrow{
+    display: none;
+  }
 }
 @media screen and (min-width:769px) {
   .sb-img{
     max-width: 3050px;
   }
   .icons {
-    margin-top: 33rem;
+    margin-top: 28rem;
     padding-left: 48%;
     color: white;
   }

@@ -11606,7 +11606,7 @@ body {
   nav .container button {
     width: 4rem;
     height: 2.2rem;
-    font-size: small !important;
+    font-size: small !important ;
   }
   nav .container{
     display: flex;
