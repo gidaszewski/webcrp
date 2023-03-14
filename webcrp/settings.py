@@ -20,18 +20,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*xwj%4vpkj51%kf_g7s4_9aam)lh%u-dl3qvv57fzxzc$cjanl'
+
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','*xwj%4vpkj51%kf_g7s4_9aam)lh%u-dl3qvv57fzxzc$cjanl')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.costarioparana.com', 'costarioparana.com', '.costarioparana.com.ar', 'www.costarioparana.com.ar','89.117.32.77']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'admin_interface',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -43,7 +45,10 @@ INSTALLED_APPS = [
     'Pago',
     'Nosotros',
     'Datos',
+    'colorfield',
 ]
+
+X_FRAME_OPTIONS="SAMEORIGIN"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,9 +87,9 @@ WSGI_APPLICATION = 'webcrp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dbwebcrp',
-        'USER': 'JuanCruz',
-        'PASSWORD': 'Jotace2001',
+        'NAME': 'crpDB',
+        'USER': 'fran',
+        'PASSWORD': 'Basededatoscrp23',
         'HOST': 'localhost',
         'PORT': '3306',
     }

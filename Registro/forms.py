@@ -14,6 +14,7 @@ class FormRegistro(forms.Form):
     pais = forms.CharField(required=True)
     estado = forms.CharField(required=True)
     dni = forms.IntegerField(required=True)
+    distancia = forms.ChoiceField(choices=tipos_distancias, required=True, initial="")
     telefono = forms.IntegerField(required=True)
     grupo_de_running = forms.CharField(required=True)
     talle_de_remera = forms.ChoiceField(choices=tipos_remeras, required=True, initial="")
