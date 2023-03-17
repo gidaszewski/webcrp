@@ -143,5 +143,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'juancgonzalez0901@gmail.com' # Aquí debes especificar la cuenta de correo que se usará para enviar los correos
-EMAIL_HOST_PASSWORD = 'hrukytteklmfqpaq' # Aquí debes especificar la contraseña de la cuenta de correo que se usará para enviar los correos
+EMAIL_HOST_USER = 'costarioparana@gmail.com' # Aquí debes especificar la cuenta de correo que se usará para enviar los correos
+EMAIL_HOST_PASSWORD = 'asxyphomxuekmmgb' # Aquí debes especificar la contraseña de lca cuenta de correo que se usará para enviar los correos
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'webcrp/webcrp/media/documentos/')

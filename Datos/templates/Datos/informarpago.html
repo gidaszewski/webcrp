@@ -1,0 +1,31 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'webcrp/css/formulario.css' %}">
+    <link rel="stylesheet" href="{% static 'webcrp/css/botones.css' %}">
+</head>
+<header class="masthead">
+	<div class="contenedor-form">
+    		<div class="contact-form">
+        		<span class="heading">INFORMAR PAGO</span>
+        		<form method="POST" enctype="multipart/form-data">
+            		{% csrf_token %}
+            		<label>{{ formulario.nombre.label }}</label>
+            		{{ formulario.nombre }}
+            		<label>{{ formulario.apellido.label }}</label>
+            		{{ formulario.apellido }}
+            		<label>{{ formulario.distancia.label }}</label>
+            		{{ formulario.distancia }}
+			<p class="text-black"> El archivo debe ser .jpeg .png o .pdf
+            		<label>{{ formulario.archivo.label }}</label>
+            		{{ formulario.archivo }}
+            		<input type="submit" value="Enviar" class="btn-primary">
+        		</form>
+    		</div>
+	</div>
+</header>
+{% endblock %}

@@ -10,13 +10,19 @@
             >MÉTODOS DE PAGO</h3>
             <p class="text-black text-center mt-2 mb-0"
             >Elegí la opción para pagar tu inscripción a CHANÁ CHALLENGE</p>
-            <dt class="text-black text-center mb-3"
-            >Recordá que se realiza el pago del 50% de la inscripción y luego el otro 50% en efectivo en la entrega de Kits.</dt>
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6">
-                    <section class="col-xl-8 col-lg-5">
+            <dt class="text-black text-center mb-0"
+            >Recuerda que se realiza el pago del 50% de la inscripcion y luego el otro 50% en efectivo en la entrega de Kits.</dt>
+            <dt class="text-primary text-center  mb-2">
+                 IMPORTANTE: Una vez realizado el pago, presiona el boton 'Informar Pago' y sube tu comprobante de pago para validar tu inscripcion.</dt>
+                 <div class="container h-auto d-flex  aling-items-center justify-content-center">
+		 <a class="btn btn-primary mt-1 mb-1" href="{% url 'informar-pago' %}"
+                 >INFORMAR PAGO</a>
+		 </div>
+		 <div class="row gx-0 mb-4 mb-lg-3 justify-content-center">
+                 <div class="col-lg-6">
+                    <section class="col-xl-8 col-lg-5 mt-3">
                         <div class="text-black text-lg-left">
-                            <mark class="text-primary mt-2 mb-5"
+                            <mark class="text-primary mt-3 mb-5"
                             >OPCIÓN 1:</mark>
                             <h2 class="text-black mt-4 mb-3"
                             >TRANSFERENCIA BANCARIA</h2>
@@ -24,19 +30,17 @@
                             CBU: 0720192588000037935236</p>
                             <p class="text-black mb-0">
                             ALIAS: LIBRO.FIRMA.FUEGO</p>
-                            <p class="text-black mb-0">
+                            <p class="text-black mb-3">
                             BANCO: SANTANDER</p>
-                            <p class="text-primary mt-3 mb-3">
-                            IMPORTANTE: Una vez realizado el pago, envíar comprobante de pago a costarioparana@gmail.com y aclarar en el asunto del mail de la siguiente manera "Nombre-Apellido-Comprobante".</p>
-                            <a class="text-black" href="{% url 'pagar-descuento' %}">
+                            <a class="text-black mt-3  mb-1" href="{% url 'pagar-descuento' %}">
                             TENGO UN CÓDIGO DE DESCUENTO</a>
                         </div>
                     </section>
                 </div>
                 <div class="col-lg-6 mb-5">
-                    <section class="col-xl-10 col-lg-2">
+                    <section class="col-xl-10 col-lg-2 mt-3">
                         <div class="text-black text-lg-left">
-                            <mark class="text-info mt-2 mb-4"
+                            <mark class="text-info mt-3 mb-4"
                             >OPCIÓN 2:</mark>
                             <h2 class="text-black mt-4 mb-3"
                             >MERCADO PAGO</h2>
@@ -44,7 +48,7 @@
                             Presioná el botón para pagar desde Mercado Pago</p>
                             <a class="btn btn-info mt-0 mb-0" href="https://mpago.la/1cEjYBQ"
                             >PAGAR 5K TREKKING</a>
-                            <a class="btn btn-info mt-1 mb-0" href="https://mpago.la/2WLNJSF"
+                            <a class="btn btn-info mt-0 mb-0" href="https://mpago.la/2WLNJSF"
                             >PAGAR 5K COMPETITIVO</a>
                             <a class="btn btn-info mt-1 mb-0" href="https://mpago.la/1n5zb43"
                             >PAGAR 10K COMPETITIVO</a>
@@ -54,6 +58,7 @@
                     </section>
                 </div>
                 <div class="row mt-0 mb-0">
+		    <h3 class="text-black text-center">PRECIOS PRIMER PERIODO</h3>
                     <img class="img-fluid" src="{% static 'Home/assets/img/PRECIOS.png' %}" alt="..." />
                 </div>
             </div>
