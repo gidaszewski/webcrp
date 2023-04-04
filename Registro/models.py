@@ -1,4 +1,5 @@
 from django.db import models
+from import_export import resources
 
 # Create your models here.
 tipos_categorias = [
@@ -22,7 +23,8 @@ tipos_remeras = [
         ("S", 'S'),
         ("M", 'M'),
         ("L", 'L'),
-        ("XL", 'XL')
+        ("XL", 'XL'),
+	("XXL", 'XXL')
         ]
 
 tipos_generos = [
@@ -58,3 +60,7 @@ class Usuario(models.Model):
     categoria  = models.CharField(max_length=40, null=True,
             choices=tipos_categorias, default="")
     email=models.EmailField()
+
+class UsuarioResource(resources.ModelResource):
+	class Meta:
+		model = Usuario

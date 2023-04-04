@@ -6,18 +6,6 @@
 <head>
     <link rel="stylesheet" href="{% static 'webcrp/css/formularios2.css' %}">
 </head>
-<div class="row">
-    <header class="masthead col-1">
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <img class="img-logo img-fluid mb-3 mb-lg-0" src="{% static 'Home/assets/img/logo-evento.png' %}" alt="..." />
-        </div>
-    </header>
-    <a class="arrow-container col-2" id="mi-svg">
-        <div class="arrow"></div>
-        <div class="arrow"></div>
-        <div class="arrow"></div>
-    </a>
-</div>
 
 <section class="projects-section bg-black">
     <div class="container px-4 px-lg-5">
@@ -28,12 +16,26 @@
                 <div class="featured-text text-white text-left text-lg-left">
                     <h4>Nuevo desafío</h4>
                     <p class="text-white-50 mb-0">
-                    7 DE MAYO DE 2023 - DIAMANTE, E.R HORA 10:00AM - DISTANCIAS 21K, 10K Y 5K - LARGADA EN 'Complejo Turístico Valle de La Ensenada'.</p>
+                    7 DE MAYO DE 2023 9:30AM - DIAMANTE, E.R HORA - DISTANCIAS 21K, 10K Y 5K</p>
                     <a class="btn btn-primary mt-4 mb-4" href="{% url 'registro' %}"
                     >INSCRIBITE YA</a>
                 </div>
             </div>
         </div>
+	<div class="container px4 px-lg-5">
+		<div class="text-white text-center text-lg-center">
+                    <h4>INFORMACION DEL EVENTO</h4>
+                    <p class="text-white mb-0">
+                    LARGADA DESDE 'Camping municipal de Diamante, Entre Rios' | HORA 9:30AM</p>
+		    <p class="text-white mb-2">PREMIACION: 1er al 5to puesto en cada una de las categorias y 1er al 3er puesto en la categoria general (no acumulativas en todas las distancias).</p>
+		    <p class="text-white mb-2">SERVICIOS: Contaremos con 5 puestos de hidratacion en la distancia de 21k, los mismos contaran con agua, fruta, gaseosa Coca Cola y cereales. Las distancias de 10k y 5k tendran puestos distribuidos de manera uniforme por el recorrido, de manera que no quede ningun participante sin hidratacion. En la llegada habra un puesto de hidratacion con agua y bebida isotonica.</p>
+		    <p class="text-white mb-2">CRONOMETRAJE: A su vez, los tiempos de todos los participantes seran medidos a traves de sistema de cronometraje por chip de la empresa Cronomet.</p>
+		    <p class="text-white mb-2">SALUD: Habra un dispositivo de asistencia medica en llegada, asi como en el recorrido. Ademas contaremos con una carpa con kinesiologos para realizar masajes post competencia.</p>
+		    <p class="text-white mb-2">KIT: Cada participante recibira un kit compuesto por: Remera de competicion, chip de cronometraje, número dorsal identificatorio con alfileres de gancho y regalos de auspiciantes.</p>
+		    <p class="text-white mb-4">INSCRIPCION: Para esta edicion se ha realizado un esquema de 2 cuotas: en primer lugar, el participante debe pagar un "anticipo", y luego, al retirar su kit, debera abonar el "saldo".
+Cabe destacar que hay 2 etapas de inscripcion con distintos precios. Al pagar el anticipo se "congela" el precio total de la inscripcion, debiendo pagar el saldo que corresponde a la etapa en la que se pago el anticipo.</p>
+                </div>
+	</div>
         <!-- Project One Row-->
         <div class="row gx-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/imagen2.png' %}" alt="..." /></div>

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['www.costarioparana.com', 'costarioparana.com', '.costarioparan
 # Application definition
 
 INSTALLED_APPS = [
+    'import_export',
     'django.contrib.admin',
     'admin_interface',
     'django.contrib.auth',
