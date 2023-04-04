@@ -13,12 +13,12 @@ def aplicar_cupon(request):
             codigo = form.cleaned_data['codigo']
             try:
                 cupon = Cupon.objects.get(codigo=codigo)
+                if cupon.porcentaje_descuento = 30:
+                    return redirect('pagar-descuento-valido-30')
+                else:
+                    return redirect('pagar-descuento-valido')
             except Cupon.DoesNotExist:
                 return render(request, 'Pago/cupon_invalido.html')
-            if codigo == 'CRP30OFF':
-                return redirect('pagar-descuento-valido-30')
-            else:
-                return redirect('pagar-descuento-valido')
     else:
         form = CuponForm()
     return render(request, 'Pago/cupondescuento.html', {'form': form})
