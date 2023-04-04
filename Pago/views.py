@@ -11,14 +11,24 @@ def aplicar_cupon(request):
         form = CuponForm(request.POST)
         if form.is_valid():
             codigo = form.cleaned_data['codigo']
-            try:
-                cupon = Cupon.objects.get(codigo=codigo)
-            except Cupon.DoesNotExist:
-                return render(request, 'Pago/cupon_invalido.html')
-            return redirect('pagar-descuento-valido')
+            if codigo == 'CRP30OFF'
+                try:
+                    cupon = Cupon.objects.get(codigo=codigo)
+                except Cupon.DoesNotExist:
+                    return render(request, 'Pago/cupon_invalido.html')
+                return redirect('pagar-descuento-valido-30')
+            else:
+                try:
+                    cupon = Cupon.objects.get(codigo=codigo)
+                except Cupon.DoesNotExist:
+                    return render(request, 'Pago/cupon_invalido.html')
+                return redirect('pagar-descuento-valido')
     else:
         form = CuponForm()
     return render(request, 'Pago/cupondescuento.html', {'form': form})
 
 def mostrar_descuento(request):
     return render(request, 'Pago/cupon_valido.html')
+
+def mostrar_super_descuento(request):
+    return render(request, 'Pago/cupon30_valido.html')
