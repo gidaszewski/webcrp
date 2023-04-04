@@ -13,7 +13,7 @@ def aplicar_cupon(request):
             codigo = form.cleaned_data['codigo']
             try:
                 cupon = Cupon.objects.get(codigo=codigo)
-                if cupon.porcentaje_descuento = 30:
+                if cupon.porcentaje_descuento == 30:
                     return redirect('pagar-descuento-valido-30')
                 else:
                     return redirect('pagar-descuento-valido')
