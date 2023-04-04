@@ -11,17 +11,13 @@ def aplicar_cupon(request):
         form = CuponForm(request.POST)
         if form.is_valid():
             codigo = form.cleaned_data['codigo']
-            if codigo == ['CRP30OFF']:
-                try:
-                    cupon = Cupon.objects.get(codigo=codigo)
-                except Cupon.DoesNotExist:
-                    return render(request, 'Pago/cupon_invalido.html')
+            try:
+                cupon = Cupon.objects.get(codigo=codigo)
+            except Cupon.DoesNotExist:
+                return render(request, 'Pago/cupon_invalido.html')
+            if codigo == 'CRP30OFF':
                 return redirect('pagar-descuento-valido-30')
             else:
-                try:
-                    cupon = Cupon.objects.get(codigo=codigo)
-                except Cupon.DoesNotExist:
-                    return render(request, 'Pago/cupon_invalido.html')
                 return redirect('pagar-descuento-valido')
     else:
         form = CuponForm()
