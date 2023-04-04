@@ -11,7 +11,7 @@ def aplicar_cupon(request):
         form = CuponForm(request.POST)
         if form.is_valid():
             codigo = form.cleaned_data['codigo']
-            if cupon == 'CRP30OFF'
+            if cupon == 'CRP30OFF':
                 try:
                     cupon = Cupon.objects.get(codigo=codigo)
                 except Cupon.DoesNotExist:
