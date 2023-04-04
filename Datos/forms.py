@@ -18,4 +18,5 @@ class ArchivoForm(forms.Form):
     nombre = forms.CharField(required=True)
     apellido = forms.CharField(required=True)
     distancia = forms.ChoiceField(choices=tipos_distancias, required=True, initial="")
+    email = forms.CharField(required=True)
     archivo = forms.FileField(required=True)

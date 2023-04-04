@@ -14,5 +14,6 @@ class Archivo(models.Model):
     apellido = models.CharField(max_length=40, null=True)
     distancia = models.CharField(max_length=2, null=True,
             choices=tipos_distancias, default="")
+    email = models.EmailField()
     archivo = models.FileField(upload_to='infpago/infpago/media/documentos')
     fecha_subida = models.DateTimeField(auto_now_add=True)

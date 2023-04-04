@@ -34,6 +34,7 @@ def cargar_archivo(request):
                 nombre=info['nombre'],
                 apellido=info['apellido'],
                 distancia=info['distancia'],
+                email=info['email'],
                 archivo=info['archivo']
             )
             archivo.save()
@@ -43,3 +44,25 @@ def cargar_archivo(request):
 
 def Completado(request):
     return render (request, 'Datos/completado.html')
+
+def is_valid_email(email):
+    # Verificar que el correo electrónico contenga un símbolo "@"
+    if "@" not in email:
+        return False
+    
+    # Dividir el correo electrónico en nombre de usuario y dominio
+    username, domain = email.split("@")
+    
+    # Verificar que el nombre de usuario solo contenga caracteres alfanuméricos, guiones bajos y puntos
+    if not re.match(r'^[\w\.\-]+$', username):
+        return False
+    
+    # Verificar que el dominio tenga al menos un punto y no comience ni termine con un guion
+    if not re.match(r'^[a-zA-Z0-9\-]+(\.[a-zA-Z0-9\-]+)+$', domain):
+        return False
+    
+    # Verificar que la extensión de dominio sea válida
+    if not re.match(r'\.[a-zA-Z]{2,}$', domain):
+        return False
+    
+    return True
