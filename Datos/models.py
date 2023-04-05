@@ -1,4 +1,6 @@
 from django.db import models
+from import_export import resources
+
 
 # Create your models here.
 tipos_distancias = [
@@ -17,3 +19,7 @@ class Archivo(models.Model):
     email = models.EmailField(null=True)
     archivo = models.FileField(upload_to='infpago/infpago/media/documentos')
     fecha_subida = models.DateTimeField(auto_now_add=True)
+
+class ArchivoResource(resources.ModelResource):
+	class Meta:
+		model = Archivo
