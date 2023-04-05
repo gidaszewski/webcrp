@@ -38,6 +38,12 @@ def cargar_archivo(request):
                 archivo=info['archivo']
             )
             archivo.save()
+            mensaje = "Recibimos tu pago para Chaná Challenge. Ya estas inscripto de manera correcta! Falta cada vez menos para disfrutar nuestro nuevo desafío. No olvides que realizaste el 50% del pago, lo que resta de tu inscripción deberás abonarlo cuando retires tu kit."
+            correo = EmailMessage(
+                'Inscripción exitosa',
+                mensaje,
+                to=[email],
+            )
             return render(request, 'Datos/completado.html', {'archivo': archivo})
     formulario = ArchivoForm()
     return render(request, 'Datos/informarpago.html', {'formulario': formulario, 'errors': formulario.errors})
