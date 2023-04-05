@@ -4,6 +4,9 @@ from Registro.models import *
 from django.views.generic import *
 from django.http import FileResponse
 import re
+from django.core.mail import send_mail
+from django.core.mail import EmailMessage
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
@@ -37,6 +40,13 @@ def Usuario_Inscripsion(request):
                 email=informacion['email']
             )
             usuario.save()
+            mensaje = "¡Felicidades! Te has pre-inscripto en Chaná Challenge. Hemos notado que aún no has realizado el pago para completar tu inscripción, para pagar ingresá en www.costarioparana.com/pagar. Si no recibimos tu pago, tus datos serán eliminados de nuestra base en 72hs a partir de hoy. IMPORTANTE: Recordá subir el comprobante del pago en nuestra web para finalizar tu inscripción."
+            correo = EmailMessage(
+                'Chaná Challenge: Pre inscripción exitosa',
+                mensaje,
+                to=[informacion['email']],
+            )
+            correo.send()
             return render(request, 'Registro/completado.html')
 
     primerFormulario = FormRegistro()
