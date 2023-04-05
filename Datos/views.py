@@ -42,8 +42,9 @@ def cargar_archivo(request):
             correo = EmailMessage(
                 'Inscripción exitosa',
                 mensaje,
-                to=[email],
+                to=[info['email']],
             )
+            correo.send()
             return render(request, 'Datos/completado.html', {'archivo': archivo})
     formulario = ArchivoForm()
     return render(request, 'Datos/informarpago.html', {'formulario': formulario, 'errors': formulario.errors})
