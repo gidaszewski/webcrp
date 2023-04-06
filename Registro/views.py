@@ -45,6 +45,7 @@ def Usuario_Inscripsion(request):
             for objeto in user:
                 valor_email = objeto.email
                 valores_email.append(valor_email)
+                
             for i in valores_email:
                 if i == usuario.email:
                     return render(request, 'Registro/registro.html', {'primerFormulario': primerFormulario, 'errors2': emailinvalido})
@@ -57,8 +58,8 @@ def Usuario_Inscripsion(request):
                         to=[informacion['email']],
                     )
                     correo.send()
-                    break
                     return render(request, 'Registro/completado.html')
+                    break
             return render(request, 'Registro/completado.html')
 
     primerFormulario = FormRegistro()
