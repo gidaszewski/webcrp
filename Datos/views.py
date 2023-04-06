@@ -88,7 +88,7 @@ def Completado(request):
         if a >= 174:
             return render(request, 'Datos/informarpago.html')
             break
-        if i == valores_comprobante[a]:
+        elif i == valores_comprobante[a]:
             objeto = Usuario.objects.get(email=i)
             objeto.compro = True
             objeto.save()
