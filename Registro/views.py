@@ -45,11 +45,14 @@ def Usuario_Inscripsion(request):
             for objeto in user:
                 valor_email = objeto.email
                 valores_email.append(valor_email)
-                
+
+            long_email=len(valores_email)
+            a=1
             for i in valores_email:
                 if i == usuario.email:
                     return render(request, 'Registro/registro.html', {'primerFormulario': primerFormulario, 'errors2': emailinvalido})
-                else:
+                    break
+                elif a == long_email:
                     usuario.save()
                     mensaje = "¡Felicidades! Te has pre-inscripto en Chaná Challenge. Hemos notado que aún no has realizado el pago para completar tu inscripción, para pagar ingresá en www.costarioparana.com/pagar. Si no recibimos tu pago, tus datos serán eliminados de nuestra base en 72hs a partir de hoy. IMPORTANTE: Recordá subir el comprobante del pago en nuestra web para finalizar tu inscripción."
                     correo = EmailMessage(
@@ -60,6 +63,8 @@ def Usuario_Inscripsion(request):
                     correo.send()
                     return render(request, 'Registro/completado.html')
                     break
+                a=a+1
+
             return render(request, 'Registro/completado.html')
 
     primerFormulario = FormRegistro()
