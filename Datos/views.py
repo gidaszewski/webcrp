@@ -68,11 +68,9 @@ def Completado(request):
     valores_email = []
     valores_compro = []
     valores_comprobante = []
-    lon_comprobrante = len(valores_comprobante)
     for objeto in user:
         valor_email = objeto.email
         valores_email.append(valor_email)
-    lon_user = len(valores_comprobante)
    
     for objeto in user:
         valor_compro = objeto.compro
@@ -81,10 +79,12 @@ def Completado(request):
     for objeto in comprobante:
         valor_comprobante = objeto.email
         valores_comprobante.append(valor_comprobante)
+
+    lon_user = len(valores_comprobante)
+
     a=0
     for i in valores_email:
-        if a > lon_user:
-            return render(request, 'Datos/informarpago.html')
+        if a >= lon_user:
             break
         if i == valores_comprobante[a]:
             objeto = Usuario.objects.get(email=valores_comprobante[a])
