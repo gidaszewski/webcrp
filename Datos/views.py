@@ -56,37 +56,19 @@ def cargar_archivo(request):
                         to=[info['email']],
                     )
                     correo.send()
+                    try:
+                        usuario = Usuario.objects.get(email=archivo.email)
+                        usuario.compro = True
+                        usuario.save()
+                    except Usuario.DoesNotExist:
+                        # Si el usuario no existe, puedes mostrar un mensaje de error o manejarlo de otra forma.
+                        pass
                     return HttpResponseRedirect('/completado-comprobante/', {'archivo': archivo})
             return HttpResponseRedirect('/completado-comprobante/', {'archivo': archivo})
     formulario = ArchivoForm()
     return render(request, 'Datos/informarpago.html', {'formulario': formulario, 'errors': formulario.errors})
 
 def Completado(request):
-    user = Usuario.objects.all()
-    comprobante = Archivo.objects.all()
-
-    valores_email = []
-    valores_comprobante = []
-
-    for objeto in user:
-        valor_email = objeto.email
-        valores_email.append(valor_email)
-
-    for objeto in comprobante:
-        valor_comprobante = objeto.email
-        valores_comprobante.append(valor_comprobante)
-
-    lon_user = len(valores_comprobante)
-
-    a=0
-    for i in valores_email:
-        while a < lon_user:
-            if i == valores_comprobante[a]:
-                objeto = Usuario.objects.get(email=valores_comprobante[a])
-                objeto.compro = True
-                objeto.save()
-                break
-            a=a+1
     return render (request, 'Datos/completado-comprobante.html')
 
 def is_valid_email(email):
