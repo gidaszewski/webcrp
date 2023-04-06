@@ -83,8 +83,8 @@ def Completado(request):
         valores_comprobante.append(valor_comprobante)
     a=0
     for i in valores_email:
-        if a >= lon_user:
-            break
+"""        if a >= lon_user:
+            break"""
         if i == valores_comprobante[a]:
             objeto = Usuario.objects.get(email=valores_comprobante[a])
             objeto.compro = True
