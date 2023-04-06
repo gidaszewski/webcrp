@@ -80,10 +80,8 @@ def Completado(request):
     for objeto in comprobante:
         valor_comprobante = objeto.email
         valores_comprobante.append(valor_comprobante)
-    a=1
+    a=0
     for i in valores_email:
-        if a >= lon_user:
-                break
         if i == valores_comprobante[a]:
             objeto = Usuario.objects.get(email=i)
             objeto.compro = True
