@@ -85,7 +85,7 @@ def Completado(request):
 
     a=0
     for i in valores_email:
-        while a <= long_user:
+        while a <= lon_user:
             if i == valores_comprobante[a]:
                 objeto = Usuario.objects.get(email=i)
                 objeto.compro = True
