@@ -85,9 +85,9 @@ def Completado(request):
 
     a=0
     for i in valores_email:
-        while 0 < a <= lon_user:
+        while 0 <= a <= lon_user:
             if i == valores_comprobante[a]:
-                objeto = Usuario.objects.get(email=i)
+                objeto = Usuario.objects.get(email=valores_comprobante[a])
                 objeto.compro = True
                 objeto.save()
                 break
