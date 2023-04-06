@@ -8,7 +8,7 @@ urlpatterns = [
     path('mail/', enviar_correo, name='enviar_correo'),
     path('mail-enviado/', enviado, name='enviado'),
     path('informarpago/', cargar_archivo, name="informar-pago"),
-    path('completado/', Completado, name="completado"),
+    path('completado-comprobante/', Completado, name="completado"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

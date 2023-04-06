@@ -60,6 +60,8 @@ class Usuario(models.Model):
     categoria  = models.CharField(max_length=40, null=True,
             choices=tipos_categorias, default="")
     email=models.EmailField()
+    compro = models.BooleanField(default=False)
+
 
 class UsuarioResource(resources.ModelResource):
 	class Meta:

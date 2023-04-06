@@ -37,20 +37,57 @@ def cargar_archivo(request):
                 email=info['email'],
                 archivo=info['archivo']
             )
-            archivo.save()
-            mensaje = "Recibimos tu pago para Chaná Challenge. Ya estas inscripto de manera correcta! Falta cada vez menos para disfrutar nuestro nuevo desafío. No olvides que realizaste el 50% del pago, lo que resta de tu inscripción deberás abonarlo cuando retires tu kit."
-            correo = EmailMessage(
-                'Inscripción exitosa',
-                mensaje,
-                to=[info['email']],
-            )
-            correo.send()
-            return render(request, 'Datos/completado.html', {'archivo': archivo})
+            emailinvalido = "Este mail ya fue ingresado"
+            user = Usuario.objects.all()
+            valores_email = []
+            for objeto in user:
+                valor_email = objeto.email
+                valores_email.append(valor_email)
+            for i in valores_email:
+                if i == archivo.email:
+                    return render(request, 'Datos/informarpago.html', {'formulario': formulario, 'errors2': emailinvalido})
+                else:
+                    archivo.save()
+                    mensaje = "Recibimos tu pago para Chaná Challenge. Ya estas inscripto de manera correcta! Falta cada vez menos para disfrutar nuestro nuevo desafío. No olvides que realizaste el 50% del pago, lo que resta de tu inscripción deberás abonarlo cuando retires tu kit."
+                    correo = EmailMessage(
+                        'Inscripción exitosa',
+                        mensaje,
+                        to=[info['email']],
+                    )
+                    correo.send()
+            return HttpResponseRedirect('/completado-comprobante/', {'archivo': archivo})
     formulario = ArchivoForm()
     return render(request, 'Datos/informarpago.html', {'formulario': formulario, 'errors': formulario.errors})
 
 def Completado(request):
-    return render (request, 'Datos/completado.html')
+    user = Usuario.objects.all()
+    comprobante = Archivo.objects.all()
+
+    valores_email = []
+    valores_compro = []
+    valores_comprobante = []
+    lon_comprobrante = len(valores_comprobante)
+    for objeto in user:
+        valor_email = objeto.email
+        valores_email.append(valor_email)
+    lon_user = len(valores_email)
+   
+    for objeto in user:
+        valor_compro = objeto.compro
+        valores_compro.append(valor_compro)
+
+    for objeto in comprobante:
+        valor_comprobante = objeto.email
+        valores_comprobante.append(valor_comprobante)
+    a=0
+    for i in valores_email:
+        if i == valores_comprobante[a]:
+            objeto = Usuario.objects.get(email=i)
+            objeto.compro = True
+            objeto.save()
+        a=a+1
+       
+    return render (request, 'Datos/completado-comprobante.html')
 
 def is_valid_email(email):
     # Verificar que el correo electrónico contenga un símbolo "@"
