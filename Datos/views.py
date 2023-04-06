@@ -84,13 +84,12 @@ def Completado(request):
     a=0
     for i in valores_email:
         if a >= lon_user:
-                break
+            break
         if i == valores_comprobante[a]:
-            objeto = Usuario.objects.get(email=i)
+            objeto = Usuario.objects.get(email=valores_comprobante[a])
             objeto.compro = True
             objeto.save()
         a=a+1
-       
     return render (request, 'Datos/completado-comprobante.html')
 
 def is_valid_email(email):
