@@ -66,16 +66,11 @@ def Completado(request):
     comprobante = Archivo.objects.all()
 
     valores_email = []
-    valores_compro = []
     valores_comprobante = []
 
     for objeto in user:
         valor_email = objeto.email
         valores_email.append(valor_email)
-   
-    for objeto in user:
-        valor_compro = objeto.compro
-        valores_compro.append(valor_compro)
 
     for objeto in comprobante:
         valor_comprobante = objeto.email
@@ -85,7 +80,7 @@ def Completado(request):
 
     a=0
     for i in valores_email:
-        while a < (lon_user+1):
+        while a < lon_user+:
             if i == valores_comprobante[a]:
                 objeto = Usuario.objects.get(email=valores_comprobante[a])
                 objeto.compro = True
