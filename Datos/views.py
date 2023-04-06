@@ -56,6 +56,7 @@ def cargar_archivo(request):
                         to=[info['email']],
                     )
                     correo.send()
+                    return HttpResponseRedirect('/completado-comprobante/', {'archivo': archivo})
             return HttpResponseRedirect('/completado-comprobante/', {'archivo': archivo})
     formulario = ArchivoForm()
     return render(request, 'Datos/informarpago.html', {'formulario': formulario, 'errors': formulario.errors})
