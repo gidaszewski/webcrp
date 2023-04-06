@@ -5,6 +5,7 @@ from django.core.mail import EmailMessage
 from django.shortcuts import render, redirect
 from Datos.forms import *
 from Datos.models import *
+from Registro.models import *
 
 # views.py
 
