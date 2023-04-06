@@ -86,6 +86,8 @@ def Completado(request):
             objeto = Usuario.objects.get(email=i)
             objeto.compro = True
             objeto.save()
+            if a > lon_user:
+                break
         a=a+1
        
     return render (request, 'Datos/completado-comprobante.html')
