@@ -21,14 +21,10 @@
             		{{ formulario.apellido }}
 					<label>{{ formulario.email.label }}</label>
 					{% if errors2 %}
-
-
                         <p style="color:red">{{errors2}}</p>
-
-
                     {% endif %}
             		{{ formulario.email }}
-					<p class="text-black">Verifica que has introducido correctamente tu email, allí enviaremos la comprobación de tu inscripción.</p>
+					<p class="text-black">Verifica que has introducido correctamente el email con el que te inscribiste, allí enviaremos la comprobación de tu inscripción.</p>
             		<label>{{ formulario.distancia.label }}</label>
             		{{ formulario.distancia }}
 					<p class="text-black"> El archivo debe ser .jpeg .png o .pdf

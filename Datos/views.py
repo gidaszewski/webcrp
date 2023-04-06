@@ -68,6 +68,7 @@ def Completado(request):
     valores_email = []
     valores_compro = []
     valores_comprobante = []
+
     for objeto in user:
         valor_email = objeto.email
         valores_email.append(valor_email)
@@ -84,7 +85,7 @@ def Completado(request):
 
     a=0
     for i in valores_email:
-        if a >= lon_user:
+        if a >= 174:
             return render(request, 'Datos/informarpago.html')
             break
         if i == valores_comprobante[a]:
