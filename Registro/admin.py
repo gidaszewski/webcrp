@@ -8,8 +8,8 @@ from import_export.admin import ExportActionMixin
 
 class UsuarioAdmin(ExportActionMixin, admin.ModelAdmin):
     resource_class = UsuarioResource
-    list_display = ["nombre", "apellido", "fecha_de_nacimiento", "dni","distancia", "pais", "estado", "genero", "telefono", "talle_de_remera","categoria","email"]
-    list_editable = ["talle_de_remera", "telefono", "email", "distancia"]
+    list_display = ["nombre", "apellido", "fecha_de_nacimiento", "dni","distancia", "pais", "estado", "genero", "telefono", "talle_de_remera","categoria","email","compro"]
+    list_editable = ["talle_de_remera", "telefono", "email", "distancia", "compro"]
     search_fields = ["nombre", "apellido", "dni", "talle_de_remera",]
 
 
