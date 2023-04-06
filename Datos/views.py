@@ -71,7 +71,7 @@ def Completado(request):
     for objeto in user:
         valor_email = objeto.email
         valores_email.append(valor_email)
-    lon_user = len(valores_email)
+    lon_user = len(valores_comprobante)
    
     for objeto in user:
         valor_compro = objeto.compro
