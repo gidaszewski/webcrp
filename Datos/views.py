@@ -82,7 +82,7 @@ def Completado(request):
         valores_comprobante.append(valor_comprobante)
     a=1
     for i in valores_email:
-        if i == valores_comprobante[a]:
+        if i == valores_comprobante[0]:
             objeto = Usuario.objects.get(email=i)
             objeto.compro = True
             objeto.save()
