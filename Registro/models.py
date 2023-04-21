@@ -4,17 +4,18 @@ from import_export import resources
 # Create your models here.
 tipos_categorias = [
         ("", 'Seleccione una categoria'),
-        ("1", 'Edad: 15-20 años'),
-        ("2", 'Edad: 20-25 años'),
-        ("3", 'Edad: 25-30 años'),
-        ("4", 'Edad: 30-35 años'),
-        ("5", 'Edad: 35-40 años'),
-        ("6", 'Edad: 40-45 años'),
-        ("7", 'Edad: 45-50 años'),
-        ("8", 'Edad: 50-55 años'),
-        ("9", 'Edad: 55-60 años'),
-        ("10", 'Edad: 60-65 años'),
-        ("11", 'Edad: +70 años')
+        ("15-19", 'Edad: 15-19 años'),
+        ("20-24", 'Edad: 20-24 años'),
+        ("25-29", 'Edad: 25-29 años'),
+        ("30-34", 'Edad: 30-34 años'),
+        ("35-39", 'Edad: 35-39 años'),
+        ("40-44", 'Edad: 40-44 años'),
+        ("40-44", 'Edad: 45-49 años'),
+        ("50-54", 'Edad: 50-54 años'),
+        ("55-59", 'Edad: 55-59 años'),
+        ("60-64", 'Edad: 60-64 años'),
+        ("160-64", 'Edad: c años'),
+        ("70", 'Edad: +70 años')
         ]
 
 tipos_remeras = [
@@ -36,10 +37,10 @@ tipos_generos = [
 
 tipos_distancias = [
         ("", 'Seleccione una distancia'),
-        ("1", '5K TREKKING'),
-        ("2", '5K COMPETITIVO'),
-        ("3", '10K COMPETITIVO'),
-        ("4", '21K COMPETITIVO'),
+        ("5", '5K TREKKING'),
+        ("5k", '5K COMPETITIVO'),
+        ("10", '10K COMPETITIVO'),
+        ("21k", '21K COMPETITIVO'),
         ]
 
 class Usuario(models.Model):
