@@ -14,7 +14,7 @@ tipos_categorias = [
         ("50-54", 'Edad: 50-54 años'),
         ("55-59", 'Edad: 55-59 años'),
         ("60-64", 'Edad: 60-64 años'),
-        ("160-64", 'Edad: c años'),
+        ("65-69", 'Edad: 65-69 años'),
         ("70", 'Edad: +70 años')
         ]
 
