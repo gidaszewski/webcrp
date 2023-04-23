@@ -17,6 +17,10 @@ def descargar_pdf(request):
     return response
 
 def Usuario_Inscripsion(request):
+    return render(request, 'Registro/ups.html')
+
+
+"""def Usuario_Inscripsion(request):
 
     if request.method == 'POST':
 
@@ -68,7 +72,7 @@ def Usuario_Inscripsion(request):
             return render(request, 'Registro/completado.html')
 
     primerFormulario = FormRegistro()
-    return render(request, 'Registro/registro.html', {'primerFormulario': primerFormulario, 'errors': primerFormulario.errors})
+    return render(request, 'Registro/registro.html', {'primerFormulario': primerFormulario, 'errors': primerFormulario.errors})"""
 
 def Completado(request):
     return render (request, 'Registro/completado.html')
