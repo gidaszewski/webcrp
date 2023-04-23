@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','*xwj%4vpkj51%kf_g7s4_9aam)lh%u-dl3qvv57fzxzc$cjanl')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'False'
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.costarioparana.com', 'costarioparana.com', '.costarioparana.com.ar', 'www.costarioparana.com.ar','89.117.32.77']
 
