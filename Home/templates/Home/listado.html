@@ -12,32 +12,32 @@
                     >CHANÁ CHALLENGE</h1> 
                     <h2 class="text-white-50 mx-auto mt-2 mb-5"
                     >LISTADO DE CORREDORES/AS</h2>
-                    <table>
-                        <thead>
-                          <tr>
-                            <th>Apellido</th>
-                            <th>Nombre</th>
-                            <th>DNI</th>
-                            <th>Distancia</th>
-                            <th>Categoria</th>
-                            <th>Email</th>
-                            <th>Pago</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {% for fila in datos %}
-                          <tr>
-                            <td>{{ fila.apellido }}</td>
-                            <td>{{ fila.nombre }}</td>
-                            <td>{{ fila.dni }}</td>
-                            <td>{{ fila.distancia }}</td>
-                            <td>{{ fila.categoria }}</td>
-                            <td>{{ fila.email }}</td>
-                            <td>{{ fila.pago }}</td>
-                          </tr>
-                          {% endfor %}
-                        </tbody>
-                      </table>
+                    <table color="white">
+                      <thead>
+                        <tr>
+                          <th>Apellido</th>
+                          <th>Nombre</th>
+                          <th>DNI</th>
+                          <th>Distancia</th>
+                          <th>Categoria</th>
+                          <th>Email</th>
+                          <th>Pago</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for fila in datos %}
+                        <tr>
+                          <td>{{ fila.APELLIDO }}</td>
+                          <td>{{ fila.NOMBRE }}</td>
+                          <td>{{ fila.DNI }}</td>
+                          <td>{{ fila.DISTANCIA }}</td>
+                          <td>{{ fila.CATEGORIA }}</td>
+                          <td>{{ fila.EMAIL }}</td>
+                          <td>{{ fila.PAGO }}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
                 </div>
             </div>
         </div>
