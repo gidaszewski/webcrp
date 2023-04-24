@@ -1,0 +1,45 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-1 text-uppercase mb-4"
+                    >CHANÁ CHALLENGE</h1> 
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5"
+                    >LISTADO DE CORREDORES/AS</h2>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Apellido</th>
+                            <th>Nombre</th>
+                            <th>DNI</th>
+                            <th>Distancia</th>
+                            <th>Categoria</th>
+                            <th>Email</th>
+                            <th>Pago</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for fila in datos %}
+                          <tr>
+                            <td>{{ fila.apellido }}</td>
+                            <td>{{ fila.nombre }}</td>
+                            <td>{{ fila.dni }}</td>
+                            <td>{{ fila.distancia }}</td>
+                            <td>{{ fila.categoria }}</td>
+                            <td>{{ fila.email }}</td>
+                            <td>{{ fila.pago }}</td>
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
