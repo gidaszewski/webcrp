@@ -4,7 +4,7 @@
 
 {% block contenido %}
     <!-- Masthead-->
-    <header class="masthead">
+    <header class="masthead"> 
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
                 <div class="text-center">
@@ -12,36 +12,40 @@
                   >CHANÁ CHALLENGE</h1> 
                   <h2 class="text-white-50 mx-auto mt-2 mb-5"
                   >LISTADO DE CORREDORES/AS</h2>
-                  <div style="height: 700px; overflow: scroll;">
-                    <table class='text-white'>
-                      <thead>
-                        <tr>
-                          <th>Apellido</th>
-                          <th>Nombre</th>
-                          <th>DNI</th>
-                          <th>Distancia</th>
-                          <th>Categoria</th>
-                          <th>Email</th>
-                          <th>Pago</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {% for fila in datos %}
-                        <tr>
-                          <td>{{ fila.APELLIDO }}</td>
-                          <td>{{ fila.NOMBRE }}</td>
-                          <td>{{ fila.DNI }}</td>
-                          <td>{{ fila.DISTANCIA }}</td>
-                          <td>{{ fila.CATEGORIA }}</td>
-                          <td>{{ fila.EMAIL }}</td>
-                          <td>{{ fila.PAGO }}</td>
-                        </tr>
-                        {% endfor %}
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
             </div>
         </div>
     </header>
+    <section class="projects-section bg-black">
+      <div class="container px-4 px-lg-5">
+        <div style="height: 700px; overflow: scroll;">
+          <table class='text-white'>
+            <thead>
+              <tr>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>DNI</th>
+                <th>Distancia</th>
+                <th>Categoria</th>
+                <th>Email</th>
+                <th>Pago</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for fila in datos %}
+              <tr>
+                <td>{{ fila.APELLIDO }}</td>
+                <td>{{ fila.NOMBRE }}</td>
+                <td>{{ fila.DNI }}</td>
+                <td>{{ fila.DISTANCIA }}</td>
+                <td>{{ fila.CATEGORIA }}</td>
+                <td>{{ fila.EMAIL }}</td>
+                <td>{{ fila.PAGO }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 {% endblock %}
