@@ -1,11 +1,16 @@
 from django.shortcuts import render
 import pandas as pd
+import csv
 
 # Create your views here.
 def home(request): 
     return render (request, 'Home/home.html')
 
 def mostrar_listado(request):
-    df = pd.read_excel('Home/listados/Home/LISTA WEB 1.xls')
-    datos = df.to_dict('records')
+    archivo_csv = 'Home/listados/Home/LISTA WEB 1.xls'
+    datos = []
+    with open(archivo_csv, 'r') as archivo:
+        lector = csv.DictReader(archivo)
+        for file in lector:
+            datos.append(fila)
     return render(request, 'Home/listado.html', {'datos': datos})
