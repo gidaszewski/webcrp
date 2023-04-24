@@ -2,7 +2,7 @@ from django.shortcuts import render
 import pandas as pd
 
 # Create your views here.
-def home (request): 
+def home(request): 
     return render (request, 'Home/home.html')
 
 def listado(request):
@@ -11,4 +11,4 @@ def listado(request):
 
     datos = df.to_dict('records')
 
-    return render(request, 'listado.html', {'datos': datos})
+    return render(request, 'Home/listado.html', {'datos': datos})
