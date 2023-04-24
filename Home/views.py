@@ -9,7 +9,7 @@ def home(request):
 def mostrar_listado(request):
     archivo_csv = 'Home/listados/Home/LISTA WEB 1.xls'
     datos = []
-    with open(archivo_csv, 'r') as archivo:
+    with open(archivo_csv, 'r', encoding='utf-8') as archivo:
         lector = csv.DictReader(archivo)
         for file in lector:
             datos.append(fila)
