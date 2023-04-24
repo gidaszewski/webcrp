@@ -11,6 +11,6 @@ def mostrar_listado(request):
     datos = []
     with open(archivo_csv, 'r', encoding='utf-8') as archivo:
         lector = csv.DictReader(archivo)
-        for file in lector:
+        for fila in lector:
             datos.append(fila)
     return render(request, 'Home/listado.html', {'datos': datos})
