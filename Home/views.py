@@ -7,7 +7,7 @@ def home(request):
     return render (request, 'Home/home.html')
 
 def mostrar_listado(request):
-    archivo_csv = 'Home/listados/Home/LISTA WEB 1.csv'
+    archivo_csv = 'Home/listados/Home/LISTAWEB25.csv'
     datos = []
     with open(archivo_csv, 'r', encoding='utf-8') as archivo:
         lector = csv.DictReader(archivo)
