@@ -5,6 +5,8 @@
 {% block contenido %}
 <head>
     <link rel="stylesheet" href="{% static 'webcrp/css/formularios2.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">  
 </head>
 
 <section class="projects-section bg-black">
@@ -23,8 +25,31 @@
 	<div class="container px4 px-lg-5">
 		<div class="text-white text-center text-lg-center">
             <h1 class="text-primary mb-1">RESULTADOS POR CATEGORÍA</h1>
-            <a class="btn btn-primary" href="https://linktr.ee/costarioparana"
+            <a class="btn btn-primary mb-2 mt-2" href="https://linktr.ee/costarioparana"
             >CLICK ACÁ</a>
+            <div class="swiffy-slider">
+                <ul class="slider-container">
+                    <li><img src="staticfiles/Home/assets/img/1.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/2.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/3.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/4.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/5.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/6.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/7.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/8.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/9.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="staticfiles/Home/assets/img/10.jpeg" style="max-width: 100%;height: auto;"></li>
+                </ul>
+            
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+            
+                <div class="slider-indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
         </div>
 	</div>
         <!-- Project One Row-->
