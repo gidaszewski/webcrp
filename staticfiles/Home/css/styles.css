@@ -12642,7 +12642,7 @@ body {
     height: auto;
     min-height: 35rem;
     padding: 0.2rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/working.png");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%, #000 100%), url("../assets/img/working.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12683,7 +12683,7 @@ body {
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/working.png");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%, #000 100%), url("../assets/img/working.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
