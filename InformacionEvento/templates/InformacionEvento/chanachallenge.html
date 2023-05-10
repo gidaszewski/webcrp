@@ -64,7 +64,7 @@
             </div>
         </div>
         <!-- Project Two Row-->
-        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <div class="row gx-0 mb-lg-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/remeras.png' %}" alt="..." /></div>
             <div class="col-lg-6">
                 <div class="bg-primary text-center h-100 project">
@@ -107,18 +107,5 @@
         </div>
     </div>
 </section>
-<script>
-    // Obtener el elemento SVG
-    const miSvg = document.getElementById('mi-svg');
-  
-    // Agregar un evento de clic al elemento SVG
-    miSvg.addEventListener('click', () => {
-      // Desplazar la pantalla hacia abajo 200px
-      window.scrollTo({
-        top: window.pageYOffset + 720,
-        behavior: 'smooth'
-      });
-    });
-</script>
 
 {% endblock %}
