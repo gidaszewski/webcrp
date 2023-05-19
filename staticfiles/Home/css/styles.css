@@ -13014,7 +13014,7 @@ body {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(21, 144, 21, 1);
+  background: rgba(214, 144, 21, 1);
   border-radius: 100%;
   line-height: 3rem;
   color: rgba(0, 0, 0, 1);
@@ -13022,7 +13022,7 @@ body {
 
 .contact-section .social a:hover {
   background: rgba(0, 0, 0, 1);
-  color: rgba(21, 144, 21, 1);
+  color: rgba(214, 144, 21, 1);
 }
 
 .contact-section .social a:active {
