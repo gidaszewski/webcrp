@@ -12,6 +12,7 @@
   --bs-teal: #64a19d;
   --bs-cyan: #1cabc4;
   --bs-white: #fff;
+  --bs-cream: #fef5e8;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
@@ -43,6 +44,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-black-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
+  --bs-cream-rgb: 254, 245, 232;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -9086,6 +9088,11 @@ fieldset:disabled .btn {
 .bg-white {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-cream {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-cream-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-body {

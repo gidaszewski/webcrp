@@ -1,0 +1,111 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+<head>
+    <link rel="stylesheet" href="{% static 'webcrp/css/formularios2.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">  
+</head>
+
+<section class="projects-section bg-cream">
+    <div class="container px-4 px-lg-5">
+        <div class="container px4 px-lg-5">
+            <div class="text-white text-center text-lg-center">
+                <div class="container col-1 px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                    <img class="sb-img" src="{% static 'Home/assets/img/LOGO-PNG.png' %}" alt="..."/>
+                </div>
+                <h1 class="text-white mb-1">RESULTADOS POR CATEGORÍA</h1>
+                <a class="btn btn-primary mb-2 mt-2" href="https://linktr.ee/costarioparana"
+                >MIRALOS ACÁ</a>
+                <p class="text-white mb-4 mt-4">MIRÁ ALGUNOS RECUERDOS DE CHANÁ CHALLENGE</p>
+                <div class="swiffy-slider mb-4 mt-4">
+
+                    <ul class="slider-container">
+                        <li><img src="{% static "Home/assets/img/1.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/2.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/3.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/4.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/5.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/6.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/7.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/8.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/9.jpeg" %}" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="{% static "Home/assets/img/10.jpeg" %}"  style="max-width: 100%;height: auto;"></li> 
+                    </ul>
+
+                    <button type="button" class="slider-nav slider-nav-next"></button>
+                
+                    <div class="slider-indicators">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project One Row-->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/imagen2.png' %}" alt="..." /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-primary text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-black">¿Qué es Tierra Chaná?</h4>
+                            <p class="mb-0 text-dark">Tierra Chana es un tesoro natural en la ciudad de Diamante. Con más de 25 km de senderos, es el lugar perfecto para una aventura en la naturaleza. Explora sus bosques, arroyos y praderas, y disfruta de la tranquilidad y la belleza de esta reserva ecológica única.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Two Row-->
+        <div class="row gx-0 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/remeras.png' %}" alt="..." /></div>
+            <div class="col-lg-6">
+                <div class="bg-primary text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-black">Remera Oficial</h4>
+                            <p class="mb-0 text-dark">Correr en la naturaleza es una aventura emocionante y desafiante. Es por eso que diseñamos esta remera especialmente para ayudar a los atletas a alcanzar su máximo rendimiento. Está hecha de materiales de alta calidad que se adaptan a las necesidades de los corredores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Three Row-->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/CHANA7.jpg' %}" alt="..." /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-primary text-center h-100 project">
+                    <div class="d-flex h-100">  
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-black">SOLD OUT</h4> 
+                            <p class="mb-0 text-dark">En nuestro primer desafío del año nos acompañaron más de 600 amantes del Trail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Two Row-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="{% static 'Home/assets/img/CHANA8.jpeg' %}" alt="..." /></div>
+            <div class="col-lg-6">
+                <div class="bg-primary text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-black">Trail en Tierra Chaná</h4>
+                            <p class="mb-0 text-dark">¡Atrévete a explorar lo salvaje y descubre la aventura del trail running en la naturaleza!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -3,5 +3,6 @@ from django.urls import path
 from InformacionEvento.views import *
 
 urlpatterns = [
-    path('informacion', ChanaChallenge, name="informacion"),
+    path('chanachallenge', ChanaChallenge, name="chanachallenge"),
+    path('maratondelasalud', MaratonDeLaSalud, name="maratondelasalud"),
 ]
