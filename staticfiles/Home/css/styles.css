@@ -378,7 +378,7 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
+  margin: 0.5rem;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -3263,8 +3263,8 @@ textarea.form-control.is-invalid {
 .btn {
   display: inline-block;
   font-weight: 400;
-  line-height: 1.5;
-  color: #09AB21;
+  line-height: 1;
+  color: #d69015;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -3277,7 +3277,7 @@ textarea.form-control.is-invalid {
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 10rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -4802,8 +4802,8 @@ fieldset:disabled .btn {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 .navbar>.container,
@@ -4859,10 +4859,10 @@ fieldset:disabled .btn {
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
-  line-height: 1;
+  line-height: 0;
   background-color: transparent;
   border: 3px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   transition: box-shadow 0.15s ease-in-out;
 }
 
@@ -5420,7 +5420,7 @@ fieldset:disabled .btn {
 }
 
 .card-subtitle {
-  margin-top: -0.25rem;
+  margin-top: 0rem;
   margin-bottom: 0;
 }
 
@@ -8541,7 +8541,7 @@ fieldset:disabled .btn {
 }
 
 .mt-2 {
-  margin-top: 0.5rem !important;
+  margin-top: 1.5rem !important;
 }
 
 .mt-3 {
@@ -8553,7 +8553,7 @@ fieldset:disabled .btn {
 }
 
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top: 7rem !important;
 }
 
 .mt-auto {
@@ -8593,7 +8593,7 @@ fieldset:disabled .btn {
 }
 
 .mb-1 {
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 1.25rem !important;
 }
 
 .mb-2 {
@@ -12542,8 +12542,9 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
+  padding-left: 176px;
   color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #fff;
+  border: 0px solid #fff;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -12627,9 +12628,9 @@ body {
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 1.25rem 1rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
+  font-size: 60%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
@@ -12650,7 +12651,7 @@ body {
   }
 
   nav .container button {
-    width: 4rem;
+    width: 14rem;
     height: 2.2rem;
     font-size: small !important;
   }
@@ -12694,11 +12695,11 @@ body {
 .masthead h1,
 .masthead .h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 3rem;
   letter-spacing: 0.2rem;
-  background: linear-gradient(rgba(214, 144, 21, 1), rgba(214, 144, 21, 1));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(214, 144, 21, 1));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -12706,6 +12707,7 @@ body {
 
 .masthead h2,
 .masthead .h2 {
+  font-weight: 700;
   max-width: 20rem;
   font-size: 1.25rem;
 }
@@ -12982,7 +12984,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 2rem;
   border-color: #000000;
   background: #000000;
 }
@@ -13014,10 +13016,10 @@ body {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(214, 144, 21, 1);
+  background: rgba(255, 255, 255, 1);
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(214, 144, 21, 1);
 }
 
 .contact-section .social a:hover {
@@ -13026,7 +13028,7 @@ body {
 }
 
 .contact-section .social a:active {
-  color: #fff;
+  color: #000000;
 }
 
 .footer {
