@@ -115,14 +115,14 @@ h1,
 
 h1,
 .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.1rem + 1.1vw);
 }
 
 @media (min-width: 1200px) {
 
   h1,
   .h1 {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -8949,7 +8949,7 @@ fieldset:disabled .btn {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(9, 171, 33, 1) !important;
+  color: rgba(214, 144, 21, 1) !important;
 }
 
 .text-secondary {
@@ -12714,7 +12714,7 @@ body {
 
   .masthead h1,
   .masthead .h1 {
-    font-size: 6.5rem;
+    font-size: 3rem;
     line-height: 3rem;
   }
 }
@@ -12727,7 +12727,7 @@ body {
 
   .masthead h1,
   .masthead .h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
