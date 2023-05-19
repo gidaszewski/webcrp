@@ -23,7 +23,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #09AB21;
+  --bs-primary: #d69015;
   --bs-secondary: #7464a1;
   --bs-success: #09ab21;
   --bs-info: #1cabc4;
@@ -12695,10 +12695,10 @@ body {
 .masthead .h1 {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 3rem;
-  letter-spacing: 0.5rem;
-  background: linear-gradient(rgba(153, 177, 57, 1), rgba(153, 177, 57, 0.1));
+  letter-spacing: 0.2rem;
+  background: linear-gradient(rgba(214, 144, 21, 1), rgba(214, 144, 21, 1));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
