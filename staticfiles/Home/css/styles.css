@@ -4799,7 +4799,7 @@ fieldset:disabled .btn {
 .navbar {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: initial;
   align-items: center;
   justify-content: space-between;
   padding-top: 0rem;
@@ -12542,7 +12542,7 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  padding-left: 296px;
+  padding-left: 131px;
   color: rgba(255, 255, 255, 0.8);
   border: 0px solid #fff;
 }
