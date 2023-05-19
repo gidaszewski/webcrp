@@ -12698,7 +12698,7 @@ body {
   font-weight: 700;
   line-height: 3rem;
   letter-spacing: 0.5rem;
-  background: linear-gradient(rgba(9, 171, 33, 1), rgba(9, 171, 33, 0.1));
+  background: linear-gradient(rgba(153, 177, 57, 1), rgba(153, 177, 57, 0.1));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
