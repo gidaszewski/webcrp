@@ -5,5 +5,5 @@ from InformacionEvento.views import *
 urlpatterns = [
     path('chanachallenge', ChanaChallenge, name="chanachallenge"),
     path('maratondelasalud', MaratonDeLaSalud, name="maratondelasalud"),
-    path('amanecervillaurquiza', AmanecerVilla, name="amanecervillawork")
+    path('amanecervillawork', AmanecerVilla, name="amanecervillawork")
 ]
