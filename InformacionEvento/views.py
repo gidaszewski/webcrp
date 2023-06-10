@@ -6,3 +6,6 @@ def ChanaChallenge(request):
 
 def MaratonDeLaSalud(request):
     return render (request, 'InformacionEvento/maratondelasalud.html')
+
+def AmanecerVilla(request):
+    return render (request, 'InformacionEvento/villawork.html')
