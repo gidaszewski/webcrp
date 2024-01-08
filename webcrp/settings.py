@@ -49,6 +49,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Home",
+    "Datos",
+    "InformacionEvento",
+    "Nosotros",
+    "Pago",
+    "Registro",
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
