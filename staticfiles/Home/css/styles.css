@@ -616,6 +616,11 @@ a.info-button {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .price-list {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 /* Estilos para pantallas pequeñas (teléfonos móviles) */
@@ -666,6 +671,11 @@ a.info-button {
   }
 
   .event-info {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .price-list {
     margin-left: 20px;
     margin-right: 20px;
   }
