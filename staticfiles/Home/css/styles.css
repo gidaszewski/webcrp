@@ -679,6 +679,11 @@ a.info-button {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .price-list li ul {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
 }
 
 .price-list {
