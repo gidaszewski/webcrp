@@ -675,6 +675,10 @@ a.info-button {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: left;
+  color: #88959E;
+  margin-left: 240px;
+  margin-right: 240px;
 }
 
 .price-list li {
@@ -683,5 +687,5 @@ a.info-button {
 
 .price-list li ul {
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
