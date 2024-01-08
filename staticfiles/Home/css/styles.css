@@ -585,6 +585,25 @@ a.info-button {
   margin-right: 240px;
 }
 
+.price-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #88959E;
+  margin-left: 250px;
+  margin-right: 240px;
+}
+
+.price-list li {
+  margin-bottom: 10px;
+}
+
+.price-list li ul {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
 /* Estilos para pantallas medianas (iPads y tabletas similares) */
 @media only screen and (max-width: 1024px) {
   .content-home {
@@ -684,23 +703,4 @@ a.info-button {
     margin-top: 5px;
     margin-left: 5px;
   }
-}
-
-.price-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  color: #88959E;
-  margin-left: 250px;
-  margin-right: 240px;
-}
-
-.price-list li {
-  margin-bottom: 10px;
-}
-
-.price-list li ul {
-  margin-top: 5px;
-  margin-left: 10px;
 }
