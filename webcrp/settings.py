@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     "Nosotros",
     "Pago",
     "Registro",
+    "colorfield",
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
