@@ -670,3 +670,18 @@ a.info-button {
     margin-right: 20px;
   }
 }
+
+.price-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price-list li {
+  margin-bottom: 10px;
+}
+
+.price-list li ul {
+  margin-top: 5px;
+  margin-left: 20px;
+}
