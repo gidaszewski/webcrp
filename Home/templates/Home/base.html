@@ -17,106 +17,50 @@
             name="author"
             content=""
         />
-        <title>Costa Río Paraná</title>
+        <title>CRP 2024</title>
         <link
             rel="icon"
             type="image/x-icon"
             href="{% static 'Home/assets/solcito.ico' %}"
         />
-        <!-- Font Awesome icons -->
-        <script
-            src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
-            crossorigin="anonymous">
-        </script>
-        <!-- Google fonts-->
-        <link
-            href="https://fonts.googleapis.com/css?family=Varela+Round"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-            rel="stylesheet"
-        />
-        <!-- Core theme CSS-->
-        <link
-            href="{% static 'Home/css/styles.css' %}"
-            rel="stylesheet"
-        />
+        <!-- Style-->
+        <link href="{% static 'Home/css/styles.css' %}" rel="stylesheet" />
     </head>
+
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container px-2 px-lg-4">
-                <img class="img-fluid" src="{% static 'Home/assets/img/LOGO-NAVBAR.png' %}" alt="..." style="width: 125px;" href="{% url 'home' %}"/>
-                <button class="navbar-toggler navbar-toggler-left text-white collapsed"
-                type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                </button>
-                <!-- Botones Nav-->
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a 
-                                class="nav-link"
-                                href="{% url 'home'%}"
-                                >Inicio</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a 
-                                class="nav-link"
-                                href="{% url 'chanachallenge'%}"
-                                >Ediciones anteriores</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="{% url 'sobre-nosotros' %}"
-                                >Sobre Nosotros</a
-                            >
-                        </li>
-                    </ul>
-                </div>
+        <div class="navbar">
+            <a href="{% url 'home' %}" class="logo"><img src="{% static 'Home/assets/img/LogoCRP-Navbar.svg'%}" alt="Logo"></a>
+            <div class="nav-links">
+                <a href="{% url 'mantenimiento' %}" class="nav-item">Nosotros</a>
+                <a href="{% url 'mantenimiento' %}" class="nav-item">Ediciones</a>
+                <a href="{% url 'mantenimiento' %}" class="nav-item">Galería</a>
+                <a href="{% url 'info-evento-actual' %}" class="nav-item special">Nuevo Desafío</a>
             </div>
-        </nav>
-        {% block contenido %} {% endblock %} {% block contenido2 %} 
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container bg-black px-4 px-lg-5">
-                <p class="text-center text-light mx-auto mt-2 mb-2"
-                >SEGUÍNOS EN NUESTRAS REDES</p>
-                <div class="social d-flex justify-content-center mt-2">
-                    <a 
-                        class="mx-2"
-                        href="https://www.instagram.com/costarioparana_/">
-                        <i class="fab fa-instagram">
-                        </i>
-                    </a>
-                    <a
-                        class="mx-2"
-                        href="https://www.facebook.com/costarioparana">
-                        <i class="fab fa-facebook-f">
-                        </i>
-                    </a>
-                </div>
+        </div>
+
+
+        {% block contenido %} {% endblock %} {% block contenido2 %}
+
+
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="{% static 'Home/assets/img/LogoSol-Footer.svg' %}" alt="Logo Pequeño">
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50">
-            <div class="container px-4 px-lg-5"
-                >Copyright &copy; Costa Río Paraná 2023
+            <div class="footer-text">
+                <p>© 2024 Costa Río Paraná. Todos los derechos reservados.</p>
             </div>
-        </footer>
+        </div>
         {% endblock %}
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="{% static 'Home/js/scripts.js' %}"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            setTimeout(function() {
+                var element = document.querySelector('.navbar');
+                if (element) {
+                    element.classList.add('show-navbar');
+                }
+            }, 300);
+        </script>
+
     </body>
 </html>

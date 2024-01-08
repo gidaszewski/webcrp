@@ -1,0 +1,72 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <div class="content-info-event-container">
+        <div class="content-info-event">
+            <img src="{% static 'Home/assets/img/LogoCarreraDeLaMujer-Home.svg' %}" alt="Logotipo" class="event-image">
+            <p class="event-text">Esta distinguida carrera, diseñada para cautivar los sentidos y elevar el espíritu,
+                marca el comienzo de nuestro año deportivo. Ofrecemos tres distancias,
+                cada una tejida con cuidado para satisfacer diversos gustos y niveles de habilidad.</p>
+
+            <h3 class="event-text-special">10K - 5K - 5K Trekking</h3>
+
+            <p class="event-text">Para todos los apasionados del running que buscan un desafío,
+                el trayecto de 10 kilómetros desentraña las calles con fuerza.
+                <br>La opción de 5 kilómetros está diseñada para quienes desean saborear cada paso,
+                disfrutando del ritmo y la armonía del recorrido.
+                Para quienes aman caminar, el trekking de 5 kilómetros invita a explorar las calles con determinación,
+                permitiendo que cada paso sea una declaración de fuerza y resistencia.</br></p>
+
+            <h3 class="event-text-special">Diamante, Entre Ríos</h3>
+
+            <p class="event-text">Recorrer las calles de Diamante es sumergirse en un viaje que combina la elegancia del pasado con la vitalidad del presente.
+                Sus calles, empedradas con historias centenarias, son el testigo silencioso de eventos que han dado forma a esta joya de Entre Ríos.</p>
+
+            <hr>
+
+            <p class="event-info-title">Servicios en competencia</p>
+            <p class="event-info">Se contará con X puestos de hidratación en la distancia de 10k con agua y fruta.
+                Las distancias de 5k competitivas y 5k trekking tendrán puestos distribuidos de manera uniforme por el recorrido,
+                de manera que no quede ningún corredor sin hidratación. En la llegada puesto de hidratación con agua y bebida isotónica.</p>
+
+            <p class="event-info-title">Cronometraje</p>
+            <p class="event-info">A su vez, los tiempos de todos los participantes serán medidos a través de sistema de cronometraje
+                por chip de la empresa XXXXX.
+            </p>
+
+            <p class="event-info-title">Salud</p>
+            <p class="event-info">Habrá un dispositivo de asistencia médica en llegada, así como en el recorrido además una carpa
+                con kinesiólogos para realizar masajes post competencia.</p>
+
+            <p class="event-info-title">Kit Corredor</p>
+            <p class="event-info">Cada participante recibirá un kit compuesto por remera oficial de competición,
+                chip de cronometraje, número dorsal identificatorio con alfileres de gancho y regalos de auspiciantes.
+            </p>
+
+            <hr>
+
+            <div class="start-buttons">
+                <a class="inscribe-button" href="https://forms.gle/Tt9biyLw1gKvhVis9" target="_blank">INSCRIBIRME YA</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            var element = document.querySelector('.content-info-event-container');
+            if (element) {
+                element.classList.add('show-content-info-event');
+            }
+        }, 300);
+    </script>
+
+</html>
+
+{% endblock %}
