@@ -677,21 +677,13 @@ a.info-button {
   padding: 0;
   text-align: left;
   color: #88959E;
-  margin-left: 240px;
-  margin-right: 240px;
 }
 
 .price-list li {
-  text-align: left;
-  color: #88959E;
   margin-bottom: 10px;
-  margin-left: 240px;
-  margin-right: 240px;
 }
 
 .price-list li ul {
-  text-align: left;
-  color: #88959E;
   margin-top: 5px;
   margin-left: 250px;
   margin-right: 240px;
