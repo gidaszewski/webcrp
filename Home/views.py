@@ -27,7 +27,7 @@ def galery(request):
         "images": images_json["images"],
     }
 
-    return render(request, "Home/galeria.html")
+    return render(request, "Home/galeria.html", context)
 
 
 def about(request):
