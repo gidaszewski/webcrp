@@ -31,5 +31,5 @@ def galery(request):
     return render(request, "Home/galeria.html", context)
 
 
-def nosotros(request):
+def about(request):
     return render(request, "Home/nosotros.html")

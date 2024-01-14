@@ -9,5 +9,5 @@ urlpatterns = [
     path("carrera-de-la-mujer/", info_evento_actual, name="info-evento-actual"),
     path("mantenimiento/", mantenimiento, name="mantenimiento"),
     path("galeria/", galery, name="galeria"),
-    path("nosotros/", nosotros, name="nosotros"),
+    path("nosotros/", about, name="nosotros"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
