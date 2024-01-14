@@ -274,7 +274,7 @@ a:not([href]):not([class]):hover {
 
 .logo img {
   height: 100%;
-  width: 55%;
+  width: 80%;
   margin-top: 20px;
   /* Ajustar la altura del logo al 100% de la barra de navegación */
 }
