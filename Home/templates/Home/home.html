@@ -9,13 +9,48 @@
 
     <div class="content-home-container">
         <div class="content-home">
-            <p class="start-text">10 DE MARZO DE 2024 | DIAMANTE, ENTRE RÍOS</p>
+            <p class="start-text">10 DE MARZO DE 2024 | DIAMANTE, E.R</p>
             <img src="{% static 'Home/assets/img/LogoCarreraDeLaMujer-Home.webp' %}" alt="Logotipo" class="start-image">
             <div class="start-buttons">
                 <a class="inscribe-button" href="https://forms.gle/Tt9biyLw1gKvhVis9" target="_blank">INSCRIBIRME YA</a>
                 <a class="info-button" href="{% url 'info-evento-actual' %}" >VER MÁS INFO</a>
             </div>
+
+            <hr>
+
+            <h2 class="start-text-galery">Calendario Runner 2024</h2>
+            <p class="start-text">En el presente año, hemos programado la realización de seís ediciones distintas de eventos deportivos</p>
+
         </div>
+
+        <div class="calendary-info-home">
+            <div class="calendar-container">
+                <div class="fila">
+                    <a href="{% url 'info-evento-actual' %}" class="calendar-img" id="imagen1" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/xfi7aui84fq6mea0ons0.webp');"></a>
+                    <a href="#" class="calendar-img no-transform" id="imagen2" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/lrt9uzvvykqmylnbpi2k.webp');"></a>
+                    <a href="#" class="calendar-img no-transform" id="imagen3" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/dghcqj01f2dnpsybbi1i.webp');"></a>
+                </div>
+                <div class="fila">
+                    <a href="#" class="calendar-img no-transform" id="imagen4" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/mxeypejobbxbbyzgfigu.webp');"></a>
+                    <a href="#" class="calendar-img no-transform" id="imagen5" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/lv2uvgehxc4suphw0hu9.webp');"></a>
+                    <a href="#" class="calendar-img no-transform" id="imagen6" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/sgxcwlsbmg63c1tooiia.webp');"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-info-container">
+            <h2 class="more-info-text">Explorá más sobre nosotros</h2>
+            <a href="{% url 'galeria' %}" style="text-decoration: none;"><p class="more-info-text">Mirá nuestra galeria de imágenes</p></a>
+        </div>
+
+        <div class="content-galery-bottom">
+            <img class="logo-crp-social" src="{% static 'Home/assets/img/LogoCRP-Navbar.svg'%}" alt="Logo"></img>
+            <div class="social-container">
+                <a href="https://www.instagram.com/costarioparana_/" target="_blank"><img class="social-icon-2" src="https://res.cloudinary.com/dftjkw401/image/upload/v1705100707/CRP%20Website/lush0ubuqgjq1doijah4.png"></a>
+                <a href="https://www.facebook.com/costarioparana" target="_blank"><img class="social-icon-1" src="https://res.cloudinary.com/dftjkw401/image/upload/v1705100707/CRP%20Website/acpsecy4p7g8ogxkjwez.png"></a>
+            </div>
+        </div>
+
     </div>
 
     <script>

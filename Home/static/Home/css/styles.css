@@ -198,7 +198,7 @@ a {
 }
 
 a:hover {
-  color: var(--bs-link-hover-color);
+  opacity: 0.6;
 }
 
 a:not([href]):not([class]),
@@ -262,11 +262,8 @@ a:not([href]):not([class]):hover {
   padding: 0 61px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  /* Establecer la opacidad inicial en 0 */
   transform: translateY(-20px);
-  /* Translación inicial hacia arriba */
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  /* Duración de la transición de 0.5 segundos */
 }
 
 .show-navbar {
@@ -280,6 +277,10 @@ a:not([href]):not([class]):hover {
   width: 55%;
   margin-top: 20px;
   /* Ajustar la altura del logo al 100% de la barra de navegación */
+}
+
+.logo img:hover {
+  opacity: 0.6;
 }
 
 .nav-links {
@@ -296,45 +297,97 @@ a:not([href]):not([class]):hover {
   color: #88959E;
 }
 
-/* Estilos para pantallas medianas (iPads y tabletas similares) */
-@media only screen and (max-width: 1024px) {
-  .navbar {
-    padding: 0 30px;
-    /* Ajuste del espacio de relleno */
-  }
-
-  .nav-links {
-    margin-right: 10px;
-    /* Ajuste del margen derecho */
-  }
-
-  .nav-item {
-    margin: 0 10px;
-    /* Ajuste del margen entre elementos */
-  }
+.nav-res-item {
+  text-decoration: none;
+  color: white;
 }
 
-/* Estilos para pantallas pequeñas (teléfonos móviles) */
+.nav-res-item-spc {
+  text-decoration: none;
+  color: #FFA100;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     padding: 0 20px;
-    /* Ajuste del espacio de relleno */
   }
 
   .logo img {
     width: 60%;
     margin-left: 10px;
-    /* Ajuste automático del ancho */
   }
 
   .nav-links {
-    margin-right: 20px;
-    /* Ajuste del margen derecho */
+    display: none;
   }
 
-  .nav-item {
+  .hide {
     display: none;
-    /* Ocultar .nav-item en teléfonos móviles */
+    max-height: 0 !important;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .dropdown .title {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    background-color: transparent;
+    background-image: url("../assets/img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .dropdown .title .fa-angle-right {
+    float: right;
+    margin-right: .7em;
+    transition: transform .3s;
+  }
+
+  .dropdown .menu {
+    position: absolute;
+    padding: 10px 0;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: #88959E;
+    overflow: hidden;
+  }
+
+  .dropdown .menu .option {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-size: smaller;
+    margin-top: 25px;
+  }
+
+  .dropdown .menu .option:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .pointerCursor:hover {
+    cursor: pointer;
+  }
+
+  .rotate-90 {
+    transform: rotate(90deg);
   }
 }
 
@@ -348,6 +401,7 @@ a:not([href]):not([class]):hover {
   .logo img {
     width: 60%;
     margin-left: 10px;
+    margin-top: 7px;
     /* Ajuste automático del ancho */
   }
 
@@ -368,7 +422,7 @@ a:not([href]):not([class]):hover {
 
 .footer {
   background-color: #FFA100;
-  height: 80px;
+  height: 260px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -383,19 +437,19 @@ a:not([href]):not([class]):hover {
 
 .footer-logo img {
   height: 100%;
-  width: 30px;
-  /* Ajustar la altura del logo al 100% del contenedor del logo en el footer */
+  width: 60px;
 }
 
 .footer-text {
   text-align: right;
   font-size: smaller;
-  /* Alinear el texto a la derecha en el footer */
 }
 
 /* Estilos para pantallas medianas (iPads y tabletas similares) */
 @media only screen and (max-width: 1024px) {
   .footer {
+    display: flex;
+    justify-content: center;
     padding: 0 30px;
     /* Ajuste del espacio de relleno */
   }
@@ -423,9 +477,202 @@ a:not([href]):not([class]):hover {
 /* Estilos para pantallas muy pequeñas (teléfonos móviles en modo paisaje) */
 @media only screen and (max-width: 480px) {
   .footer {
+    display: flex;
     padding: 0 10px;
+    justify-content: center;
     /* Ajuste del espacio de relleno */
   }
+}
+
+.content-galery {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #222426;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.content-galery-bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #222426;
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.nosotros-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #222426;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-banner {
+  width: 205px;
+  margin-left: 318px;
+}
+
+.text-banner {
+  margin-left: 33px;
+  margin-right: 300px;
+  color: white;
+  text-align: left;
+}
+
+.text-banner .title {
+  margin: 0 0px;
+}
+
+.text-banner .info {
+  font-size: smaller;
+  margin-top: 10px;
+}
+
+.about-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-1-text {
+  margin-left: 240px;
+  margin-right: 240px;
+  text-align: left;
+}
+
+.about-1-text .title {
+  color: #FFA100;
+}
+
+.about-1-text .info {
+  color: #88959E;
+  margin-top: 20px;
+  font-size: smaller;
+}
+
+.about-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #FFA100;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-2-text {
+  margin-left: 240px;
+  margin-right: 100px;
+  text-align: left;
+}
+
+.about-2-text .title {
+  color: #ffffff;
+}
+
+.about-2-text .info {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: smaller;
+}
+
+.about-2 .list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: smaller;
+}
+
+.about-2 li {
+  margin-bottom: 10px;
+}
+
+.about-2 li ul {
+  margin-top: 5px;
+}
+
+.about-2-img {
+  width: 400px;
+  margin-right: 200px;
+  margin-top: 70px;
+}
+
+.about-3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-3-text {
+  margin-left: 240px;
+  margin-right: 240px;
+  text-align: left;
+}
+
+.about-3-text .title {
+  color: #FFA100;
+}
+
+.about-3-text .info {
+  color: #88959E;
+  margin-top: 20px;
+  font-size: smaller;
+}
+
+.about-3 .list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #88959E;
+  font-size: smaller;
+}
+
+.about-3 li {
+  margin-bottom: 10px;
+}
+
+.about-3 li ul {
+  margin-top: 5px;
+}
+
+.logo-crp-social {
+  width: 400px;
+  margin-bottom: 15px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .content-home {
@@ -441,6 +688,12 @@ a:not([href]):not([class]):hover {
   transition: opacity 0.5s ease-in-out;
 }
 
+.content-home-container hr {
+  margin: 60px 0;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+
 .show-content-home-container {
   opacity: 1;
 }
@@ -451,6 +704,14 @@ a:not([href]):not([class]):hover {
   text-align: center;
   margin-top: 86px;
   margin-bottom: 86px;
+}
+
+.calendary-info-home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .content-info-event-container {
@@ -503,6 +764,10 @@ a.back-button {
 
 .start-text {
   color: #88959E;
+}
+
+.start-text-galery {
+  color: #FFA100;
 }
 
 .start-image {
@@ -585,6 +850,161 @@ a.info-button {
   margin-right: 240px;
 }
 
+.price-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #88959E;
+  margin-left: 250px;
+  margin-right: 240px;
+}
+
+.price-list li {
+  margin-bottom: 10px;
+}
+
+.price-list li ul {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  margin: 0;
+}
+
+#gallery {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  min-width: 100%;
+  height: 720px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Navegación de la galería */
+.gallery-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.nav-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.nav-button>span {
+  font-size: 30px;
+}
+
+.nav-button:hover {
+  background-color: #00000034;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 780px;
+  height: 502px;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.calendar-img {
+  display: block;
+  width: 240px;
+  height: 240px;
+  margin-bottom: 20px;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.calendar-img:hover {
+  transform: scale(1.1);
+}
+
+.no-transform:hover {
+  transform: none;
+  pointer-events: none;
+}
+
+.more-info-nosotros {
+  margin-top: 60px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, #42484C 100%, #42484C 100%), url("https://res.cloudinary.com/dftjkw401/image/upload/v1705013253/CRP%20Website/AVU2023-137_es0sh5.jpg") center/cover no-repeat;
+}
+
+.more-info-container {
+  margin-top: 60px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, #42484C 100%, #42484C 100%), url("https://res.cloudinary.com/dftjkw401/image/upload/v1705013253/CRP%20Website/AVU2023-137_es0sh5.jpg") center/cover no-repeat;
+}
+
+.more-info-text {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon-1 {
+  width: 50px;
+  height: 100%;
+  margin: 0 20px;
+  display: block;
+  background-size: cover;
+}
+
+.social-icon-2 {
+  width: 38px;
+  height: 100%;
+  margin: 0 20px;
+  display: block;
+  background-size: cover;
+}
+
 /* Estilos para pantallas medianas (iPads y tabletas similares) */
 @media only screen and (max-width: 1024px) {
   .content-home {
@@ -627,20 +1047,29 @@ a.info-button {
 @media only screen and (max-width: 768px) {
   .content-home {
     padding: 0 10px;
+    margin-top: 50px;
     /* Ajuste del espacio de relleno */
   }
 
   .start-text {
     font-size: smaller;
+    margin: 0 20px
+  }
+
+  .start-text-galery {
+    margin: 0 20px;
+    margin-bottom: 20px;
   }
 
   .start-image {
     width: 325px;
+    margin-top: 15px;
   }
 
   .start-buttons {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
   }
 
   .inscribe-button,
@@ -679,23 +1108,166 @@ a.info-button {
     margin-left: 20px;
     margin-right: 20px;
   }
-}
 
-.price-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  color: #88959E;
-  margin-left: 250px;
-  margin-right: 240px;
-}
+  .price-list li ul {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
 
-.price-list li {
-  margin-bottom: 10px;
-}
+  #gallery {
+    max-width: 100%;
+  }
 
-.price-list li ul {
-  margin-top: 5px;
-  margin-left: 10px;
+  .gallery-container {
+    width: 100%;
+  }
+
+  .gallery-item {
+    min-width: 100%;
+    height: 245px;
+  }
+
+  .content-galery {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .content-galery-bottom {
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+
+  .calendary-info-home {
+    margin-top: 30px;
+  }
+
+  .calendar-container {
+    width: 360px;
+    height: 230px;
+  }
+
+  .fila {
+    gap: 10px;
+  }
+
+  .calendar-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .content-home-container hr {
+    margin: 30px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .footer-text {
+    text-align: center;
+    font-size: smaller;
+  }
+
+  .footer-text img {
+    display: none;
+  }
+
+  .logo-crp-social {
+    width: 245px;
+  }
+
+  .nosotros-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .logo-banner {
+    width: 200px;
+    margin-left: 20px;
+  }
+
+  .text-banner {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .about-1 {
+    padding-bottom: 30px;
+  }
+
+  .about-1-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .about-2 {
+    flex-direction: column-reverse;
+  }
+
+  .about-2-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .about-2 .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
+    font-size: smaller;
+  }
+
+  .about-2 li {
+    margin-bottom: 10px;
+  }
+
+  .about-2 li ul {
+    margin-top: 5px;
+  }
+
+  .about-2-img {
+    width: 210px;
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+
+  .about-3-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .about-3-text .title {
+    color: #FFA100;
+  }
+
+  .about-3-text .info {
+    color: #88959E;
+    margin-top: 20px;
+    font-size: smaller;
+  }
+
+  .about-3 .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #88959E;
+    font-size: smaller;
+  }
+
+  .about-3 li {
+    margin-bottom: 10px;
+  }
+
+  .about-3 li ul {
+    margin-top: 5px;
+  }
+
+  .more-info-nosotros {
+    margin-top: 0px;
+  }
 }
