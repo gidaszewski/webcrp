@@ -13,7 +13,7 @@
             <img src="{% static 'Home/assets/img/LogoCarreraDeLaMujer-Home.webp' %}" alt="Logotipo" class="start-image">
             <div class="start-buttons">
                 <a class="inscribe-button" href="https://forms.gle/Tt9biyLw1gKvhVis9" target="_blank">INSCRIBIRME YA</a>
-                <a class="info-button" href="{% url 'info-evento-actual' %}" >VER MÁS INFO</a>
+                <a class="info-button" href="{% url 'home:info-evento-actual' %}" >VER MÁS INFO</a>
             </div>
 
             <hr>
@@ -26,7 +26,7 @@
         <div class="calendary-info-home">
             <div class="calendar-container">
                 <div class="fila">
-                    <a href="{% url 'info-evento-actual' %}" class="calendar-img" id="imagen1" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/xfi7aui84fq6mea0ons0.webp');"></a>
+                    <a href="{% url 'home:info-evento-actual' %}" class="calendar-img" id="imagen1" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/xfi7aui84fq6mea0ons0.webp');"></a>
                     <a href="#" class="calendar-img no-transform" id="imagen2" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/lrt9uzvvykqmylnbpi2k.webp');"></a>
                     <a href="#" class="calendar-img no-transform" id="imagen3" style="background-image: url('https://res.cloudinary.com/dftjkw401/image/upload/v1705095724/CRP%20Website/dghcqj01f2dnpsybbi1i.webp');"></a>
                 </div>
@@ -40,7 +40,7 @@
 
         <div class="more-info-container">
             <h2 class="more-info-text">Explorá más sobre nosotros</h2>
-            <a href="{% url 'galeria' %}" style="text-decoration: none;"><p class="more-info-text">Mirá nuestra galeria de imágenes</p></a>
+            <a href="{% url 'home:galeria' %}" style="text-decoration: none;"><p class="more-info-text">Mirá nuestra galeria de imágenes</p></a>
         </div>
 
         <div class="content-galery-bottom">

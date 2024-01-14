@@ -4,6 +4,7 @@ from Home.views import *
 from django.conf import settings
 from django.conf.urls.static import static
 
+app_name = "home"
 urlpatterns = [
     path("", home, name="home"),
     path("carrera-de-la-mujer/", info_evento_actual, name="info-evento-actual"),
