@@ -10,4 +10,4 @@ urlpatterns = [
     path("mantenimiento/", mantenimiento, name="mantenimiento"),
     path("galeria/", galery, name="galeria"),
     path("nosotros/", about, name="nosotros"),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
