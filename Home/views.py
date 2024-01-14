@@ -18,7 +18,7 @@ def mantenimiento(request):
 
 
 def about_us(request):
-    return render(request, "Home/mantenimiento.html")
+    return render(request, "Home/nosotros.html")
 
 
 def galery(request):
