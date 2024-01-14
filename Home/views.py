@@ -18,7 +18,7 @@ def mantenimiento(request):
 
 
 def galery(request):
-    json_path = os.path.join(settings.STATIC_ROOT, "staticfiles", "images.json")
+    json_path = os.path.join(settings.STATIC_ROOT, "Home", "images.json")
 
     with open(json_path) as f:
         images_json = json.load(f)
