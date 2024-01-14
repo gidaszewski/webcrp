@@ -17,6 +17,10 @@ def mantenimiento(request):
     return render(request, "Home/mantenimiento.html")
 
 
+def about(request):
+    return render(request, "Home/nosotros.html")
+
+
 def galery(request):
     json_path = os.path.join(settings.STATIC_ROOT, "Home", "images.json")
 
@@ -28,7 +32,3 @@ def galery(request):
     }
 
     return render(request, "Home/galeria.html", context)
-
-
-def about(request):
-    return render(request, "Home/nosotros.html")
