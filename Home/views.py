@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.templatetags.static import static
 import json
 import os
 from django.conf import settings
