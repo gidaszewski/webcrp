@@ -18,16 +18,16 @@ def mantenimiento(request):
 
 
 def galery(request):
-    json_path = os.path.join(settings.STATIC_ROOT, "Home", "images.json")
+    """json_path = os.path.join(settings.STATIC_ROOT, "Home", "images.json")
 
     with open(json_path) as f:
         images_json = json.load(f)
 
     context = {
         "images": images_json["images"],
-    }
+    }"""
 
-    return render(request, "Home/galeria.html", context)
+    return render(request, "Home/galeria.html")
 
 
 def about(request):
