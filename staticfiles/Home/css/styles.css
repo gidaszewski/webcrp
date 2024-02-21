@@ -774,6 +774,11 @@ a.back-button {
   height: auto;
 }
 
+.start-image-chana {
+  width: 900px;
+  height: auto;
+}
+
 .start-buttons {
   margin-top: 40px;
   /* Espacio entre la imagen y los botones */
@@ -844,6 +849,14 @@ a.info-button-chana {
   height: auto;
   margin-top: 10px;
   padding-bottom: 10px;
+  /* Espacio entre el texto y la imagen */
+}
+
+.event-image-chana {
+  width: 600px;
+  height: auto;
+  margin-top: 70px;
+  padding-bottom: 32px;
   /* Espacio entre el texto y la imagen */
 }
 
@@ -1038,6 +1051,10 @@ figure {
     width: 325px;
   }
 
+  .start-image-chana {
+    width: 325px;
+  }
+
   .start-buttons {
     display: flex;
     flex-direction: column;
@@ -1069,7 +1086,7 @@ figure {
 /* Estilos para pantallas pequeñas (teléfonos móviles) */
 @media only screen and (max-width: 768px) {
   .content-home {
-    padding: 0 10px;
+    padding: 0 0px;
     margin-top: 50px;
     /* Ajuste del espacio de relleno */
   }
@@ -1085,6 +1102,11 @@ figure {
   }
 
   .start-image {
+    width: 325px;
+    margin-top: 15px;
+  }
+
+  .start-image-chana {
     width: 325px;
     margin-top: 15px;
   }
@@ -1293,5 +1315,10 @@ figure {
 
   .more-info-nosotros {
     margin-top: 0px;
+  }
+
+  video {
+    width: 320px;
+    height: auto;
   }
 }
