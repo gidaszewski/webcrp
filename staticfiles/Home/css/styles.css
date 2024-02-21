@@ -275,7 +275,7 @@ a:not([href]):not([class]):hover {
 .logo img {
   height: 100%;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 10px;
   /* Ajustar la altura del logo al 100% de la barra de navegación */
 }
 
@@ -286,8 +286,8 @@ a:not([href]):not([class]):hover {
 .nav-links {
   display: flex;
   font-size: smaller;
-  margin-top: 20px;
-  margin-right: 460px;
+  margin-top: 10px;
+  margin-right: 533px;
   /* Centrar los elementos a la izquierda */
 }
 
