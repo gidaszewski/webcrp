@@ -13,6 +13,10 @@ def info_evento_actual(request):
     return render(request, "Home/carrera_de_la_mujer_info.html")
 
 
+def info_chana(request):
+    return render(request, "Home/chana_challenge.html")
+
+
 def mantenimiento(request):
     return render(request, "Home/mantenimiento.html")
 

@@ -781,7 +781,8 @@ a.back-button {
 }
 
 .inscribe-button,
-.info-button {
+.info-button,
+.info-button-chana {
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
@@ -812,6 +813,17 @@ a.info-button {
   text-decoration: none;
   background-color: #D3F47A;
   color: #8743D6;
+}
+
+.info-button-chana {
+  background-color: #C5E86C;
+  color: #000000;
+}
+
+a.info-button-chana {
+  text-decoration: none;
+  background-color: #C5E86C;
+  color: #000000;
 }
 
 .event-text {
@@ -1005,6 +1017,17 @@ figure {
   background-size: cover;
 }
 
+.chana-block {
+  height: auto;
+  padding-top: 170px;
+  padding-bottom: 180px;
+  margin: 120px 0;
+  background: url(https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/rringri6b4maxak88lor);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
 /* Estilos para pantallas medianas (iPads y tabletas similares) */
 @media only screen and (max-width: 1024px) {
   .content-home {
@@ -1022,7 +1045,8 @@ figure {
   }
 
   .inscribe-button,
-  .info-button {
+  .info-button,
+  .info-button-chana {
     font-size: 12px;
     margin: 10px 10px;
   }
@@ -1073,7 +1097,8 @@ figure {
   }
 
   .inscribe-button,
-  .info-button {
+  .info-button,
+  .info-button-chana {
     font-size: 12px;
     margin: 10px 10px;
   }
