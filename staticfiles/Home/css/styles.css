@@ -785,6 +785,7 @@ a.back-button {
 }
 
 .inscribe-button,
+.inscribe-button-chana,
 .info-button,
 .info-button-chana {
   padding: 10px 20px;
@@ -796,9 +797,15 @@ a.back-button {
   font-weight: bold;
 }
 
+
 .inscribe-button {
   background-color: #8743D6;
   color: white;
+}
+
+.inscribe-button-chana {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 a.inscribe-button {
@@ -806,6 +813,13 @@ a.inscribe-button {
   /* Para quitar la subrayado predeterminado en los enlaces */
   color: white;
   background-color: #8743D6;
+}
+
+a.inscribe-button-chana {
+  text-decoration: none;
+  /* Para quitar la subrayado predeterminado en los enlaces */
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
 }
 
 .info-button {
@@ -1061,6 +1075,7 @@ figure {
   }
 
   .inscribe-button,
+  .inscribe-button-chana,
   .info-button,
   .info-button-chana {
     font-size: 12px;
@@ -1118,6 +1133,7 @@ figure {
   }
 
   .inscribe-button,
+  .inscribe-button-chana,
   .info-button,
   .info-button-chana {
     font-size: 12px;
@@ -1324,5 +1340,9 @@ figure {
   video {
     width: 320px;
     height: auto;
+  }
+
+  .chana-block {
+    margin-bottom: 55px;
   }
 }
