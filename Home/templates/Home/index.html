@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>COSTA RIO PARANA | 2024</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/i0lpjwdskylvqerf9jgz" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'Home/css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="{% url 'home' %}">CRP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}"
+                            target="_blank">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://www.instagram.com/p/C7CVww3umkj/?igsh=MTg4djVob3RpM3g=" target="_blank">Nuevo
+                            desafío</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <section>
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6">
+                    <div class="boxi-distance">
+                        <p class="item-distance">21K</p>
+                        <p class="item-distance">10K</p>
+                        <p>5K</p>
+                    </div>
+                    <h1 class="block-effect" style="--td: 1.2s">
+                        <div class="block-reveal" style="--bc: #242424; --d: .1s">TRAIL</div>
+                        <div class="block-reveal" style="--bc: red; --d: .5s">COSTA RIO PARANA</div>
+                    </h1>
+                    <p class="boxi-text">Un nuevo desafío trail está llegando. Con largada desde el epicentro de Las
+                        Colinas Golf Club,
+                        Paraná, Entre Ríos. Esta carrera de trail está diseñada para que vivas una experiencia unica,
+                        adentrandote en la naturaleza que ofrece Paraná.</p>
+                    <div class="info-carrera">
+                        <li id="div1">
+                            DOMINGO 11 DE AGOSTO</li>
+                        <li id="div2">
+                            PARANA, ENTRE RIOS</li>
+                        <li id="div3">
+                            3 DISTANCIAS COMPETITIVAS</li>
+                        <a href="https://www.encarrera.com.ar/trailparana" target="_blank" class="button-inscribe div4">
+                            > INSCRIPCIONES ABIERTAS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

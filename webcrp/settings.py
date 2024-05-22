@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get(
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "www.costarioparana.com",
@@ -49,11 +49,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Home",
-    "Datos",
-    "InformacionEvento",
-    "Nosotros",
-    "Pago",
-    "Registro",
     "colorfield",
 ]
 
