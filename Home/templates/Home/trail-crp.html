@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon"
         href="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/i0lpjwdskylvqerf9jgz" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{% static 'Home/css/styles.css' %}" rel="stylesheet" />
+    <link href="{% static 'Home/css/trail-crp-styles.css' %}" rel="stylesheet" />
 </head>
 
 <body>
@@ -40,19 +40,31 @@
     <!-- Page Content-->
     <section>
         <div class="container px-4 px-lg-5">
-            <div class="title-index">
-                <h1>PROXIMOS DESAFIOS</h1>
-            </div>
-            <div class="carreras">
-                <div class="boxi-carrera">
-                    <a href="{% url 'trail-crp' %}" target="_blank"><img
-                            src="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/kxergyqjxqcxr56zaafy">
-                    </a>
-                </div>
-                <div class="boxi-carrera">
-                    <a href="{% url 'amanecer' %}" target="_blank"><img
-                            src="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/bbudizc3nf6mgaryfawn">
-                    </a>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6">
+                    <div class="boxi-distance">
+                        <p class="item-distance">21K</p>
+                        <p class="item-distance">10K</p>
+                        <p>5K</p>
+                    </div>
+                    <h1 class="block-effect" style="--td: 1.2s">
+                        <div class="block-reveal" style="--bc: #242424; --d: .1s">TRAIL</div>
+                        <div class="block-reveal" style="--bc: red; --d: .5s">COSTA RIO PARANA</div>
+                    </h1>
+                    <p class="boxi-text">Un nuevo desafío trail está llegando. Con largada desde el epicentro de Las
+                        Colinas Golf Club,
+                        Paraná, Entre Ríos. Esta carrera de trail está diseñada para que vivas una experiencia unica,
+                        adentrandote en la naturaleza que ofrece Paraná.</p>
+                    <div class="info-carrera">
+                        <li id="div1">
+                            DOMINGO 11 DE AGOSTO</li>
+                        <li id="div2">
+                            PARANA, ENTRE RIOS</li>
+                        <li id="div3">
+                            3 DISTANCIAS COMPETITIVAS</li>
+                        <a href="https://www.encarrera.com.ar/trailparana" target="_blank" class="button-inscribe div4">
+                            > INSCRIPCIONES ABIERTAS</a>
+                    </div>
                 </div>
             </div>
         </div>

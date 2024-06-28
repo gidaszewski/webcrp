@@ -4,4 +4,6 @@ from Home.views import *
 
 urlpatterns = [
     path("", home, name="home"),
+    path("amanecer/", amanecer, name="amanecer"),
+    path("trail-crp/", trail_crp, name="trail-crp"),
 ]
