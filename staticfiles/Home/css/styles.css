@@ -1023,6 +1023,7 @@ progress {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 0;
+  flex-direction: column;
 }
 
 .carreras {
@@ -1039,7 +1040,7 @@ progress {
 }
 
 .boxi-carrera img {
-  width: 450px;
+  width: 350px;
   height: auto;
   border-radius: 5px;
 }

@@ -1052,7 +1052,7 @@ progress {
 
 .info-carrera li {
   margin-bottom: 10px;
-  background-color: #626262;
+  background-color: #ffffff;
   color: #ffa928;
   list-style: none;
   padding-left: 10px;
@@ -1067,12 +1067,12 @@ progress {
 
 .info-carrera li:hover {
   background-color: #ffa928;
-  color: #626262;
+  color: #ffffff;
 }
 
 .info-carrera a {
   text-decoration: none;
-  color: #626262;
+  color: #ffffff;
   cursor: pointer;
   position: relative;
   animation: mymove 4s;
@@ -1091,12 +1091,8 @@ progress {
 }
 
 .info-carrera a:hover {
-  background-color: #626262;
+  background-color: #ffffff;
   color: #ffa928;
-}
-
-.block-effect {
-  margin-top: 100px;
 }
 
 .block-effect h1 {
