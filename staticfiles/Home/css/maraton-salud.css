@@ -7151,11 +7151,16 @@ fieldset:disabled .btn {
 @media (max-width: 575.98px) {
 
   body {
-    background-position-x: -120px;
+    background-position-x: -350px;
+    background-size: 1200px;
   }
 
   .block-effect {
     margin-top: 40px;
+  }
+
+  .info-carrera {
+    margin-bottom: 120px;
   }
 
   .distances {
@@ -7268,11 +7273,16 @@ fieldset:disabled .btn {
 @media (max-width: 767.98px) {
 
   body {
-    background-position-x: -120px;
+    background-position-x: -350px;
+    background-size: 1200px;
   }
 
   .block-effect {
     margin-top: 40px;
+  }
+
+  .info-carrera {
+    margin-bottom: 120px;
   }
 
   .distances {
