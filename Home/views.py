@@ -12,3 +12,7 @@ def trail_crp(request):
 
 def amanecer(request):
     return render(request, "Home/amanecer.html")
+
+
+def salud(request):
+    return render(request, "Home/maraton-salud.html")

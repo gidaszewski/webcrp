@@ -27,12 +27,14 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}" target="_blank">Inicio</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="https://costarioparana.com/trail-crp/" target="_blank">Trail Costa
+                    <li class="nav-item"><a class="nav-link" href="{% url 'trailcrp' %}">Trail Costa
                         Rio Paraná</a>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" href="https://costarioparana.com/amanecer/" target="_blank">Amanecer
+                    <li class="nav-item active"><a class="nav-link" href="{% url 'amanecer' %}">Amanecer
                             Villa Urquiza</a>
                     </li>
+                    <li class="nav-item active"><a class="nav-link" href="{% url 'salud' %}">Media Maraton De La Salud</a>
+                </li>
                 </ul>
             </div>
         </div>

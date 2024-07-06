@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon"
         href="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/i0lpjwdskylvqerf9jgz" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{% static 'Home/css/styles.css' %}" rel="stylesheet" />
+    <link href="{% static 'Home/css/maraton-salud.css' %}" rel="stylesheet" />
 </head>
 
 <body>
@@ -42,25 +42,30 @@
     <!-- Page Content-->
     <section>
         <div class="container px-4 px-lg-5">
-            <div class="title-index">
-                <h1>COSTA RIO PARANA</h1>
-                <p>PROXIMOS DESAFIOS</p>
-            </div>
-            <div class="carreras">
-                <div class="boxi-carrera">
-                    <a href="{% url 'trailcrp' %}"><img
-                            src="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/kxergyqjxqcxr56zaafy">
-                    </a>
-                </div>
-                <div class="boxi-carrera">
-                    <a href="{% url 'amanecer' %}"><img
-                            src="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/bbudizc3nf6mgaryfawn">
-                    </a>
-                </div>
-                <div class="boxi-carrera">
-                    <a href="{% url 'salud' %}"><img
-                            src="https://res.cloudinary.com/dftjkw401/image/upload/f_auto,q_auto/v1/CRP%20Website/dvqqvhnjk3akfpsadojs">
-                    </a>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6">
+                    <div class="boxi-distance">
+                        <p class="item-distance">21K</p>
+                        <p class="item-distance">10K</p>
+                        <p>5K</p>
+                    </div>
+                    <h1 class="block-effect" style="--td: 1.2s">
+                        <div class="block-reveal" style="--bc: #626262; --d: .1s">MEDIA MARATON</div>
+                        <div class="block-reveal" style="--bc: #ffa928; --d: .5s">DE LA SALUD</div>
+                    </h1>
+                    <p class="boxi-text">CRP vuelve a la hermosa ciudad de Villa Urquiza con un recorrido lleno de
+                        senderos, con vistas espectaculares hacia el Río Paraná y con una producción que estará
+                        pendiente de hasta el ultimo detalle, para que quienes participen vivan una experiencia única.
+                    </p>
+                    <div class="info-carrera">
+                        <li id="div1">
+                            DOMINGO 15 DE SEPTIEMBRE</li>
+                        <li id="div2">
+                            LIBERTADOR SAN MARTIN</li>
+                        <li id="div3">
+                            DESAFIO CALLE</li>
+                        <a href="#" target="_blank" class="button-inscribe div4">INSCRIPCIONES ABIERTAS</a>
+                    </div>
                 </div>
             </div>
         </div>
